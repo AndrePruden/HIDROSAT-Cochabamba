@@ -1,0 +1,1598 @@
+{
+  "taquina_2020": {
+    "id": "taquina_2020",
+    "nombre": "Aluvión Taquiña 2020 · Gran Desastre Tiquipaya",
+    "cuencaPredeterminada": "taquina",
+    "dias": [
+      {
+        "etiqueta": "2020-02-17",
+        "riesgo_principal": 27,
+        "saturacion_sar": 22,
+        "lluvia_mm": 3.3,
+        "lluvia_3d_mm": 6.0,
+        "twi_medio": 10.74,
+        "estado_titulo": "Condición hidrológica basal · Río Taquiña",
+        "estado_desc": "Inicio de la ventana de monitoreo. Humedad subsuperficial (22% SAR) en cumbres. Sin riesgo inminente.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Seguimiento Preventivo · Río Taquiña",
+            "detalle": "Cuenca en observación con retención S(t) = 19.6 mm."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.22,
+          "chutakawa": 0.2,
+          "pintumayu": 0.28,
+          "este": 0.34,
+          "tamborada": 0.31
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2020",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos masivo",
+          "titular": "Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya",
+          "medio": "Correo del Sur / Opinión Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFJidzVOZ3NMekxsbGZoelZYaUFNZXYycG5PTFdJOVB2LW55Qm92QWdCZmJWakQ5VHgtN1h3WDhaYUdpZ1VxbW5RTXdKLWlybXRpUVMwZ1JXaS1FRk1IUWlzWXhxOG1iX2NkdXdkemJQX1hmbVBSR0tmT1JYVHFYRzl5RzVEd19MN0hNVzUtSmZyOTZ6ZjhYRmhFd1BHNjhwanJmMW53UEVlc2M?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.74,
+          "storage_s_mm": 19.6,
+          "bulking_factor_bf": 1.32,
+          "p_crit_1hr_mm": 17.4,
+          "p_event_mm": 3.3
+        }
+      },
+      {
+        "etiqueta": "2020-02-18",
+        "riesgo_principal": 38,
+        "saturacion_sar": 22,
+        "lluvia_mm": 2.7,
+        "lluvia_3d_mm": 3.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "Humedecimiento progresivo en laderas · Río Taquiña",
+        "estado_desc": "Lluvias antecedentes aumentan el índice W_ant a 0.722. La saturación comienza a descender hacia Cota 2750m.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Humedecimiento Activo · C. Llavini (38 pts)",
+            "detalle": "Incremento de humedad en cabecera alta. El abanico aluvial permanece transitable."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.42,
+          "chutakawa": 0.19,
+          "pintumayu": 0.26,
+          "este": 0.32,
+          "tamborada": 0.29
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2020",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos masivo",
+          "titular": "Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya",
+          "medio": "Correo del Sur / Opinión Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFJidzVOZ3NMekxsbGZoelZYaUFNZXYycG5PTFdJOVB2LW55Qm92QWdCZmJWakQ5VHgtN1h3WDhaYUdpZ1VxbW5RTXdKLWlybXRpUVMwZ1JXaS1FRk1IUWlzWXhxOG1iX2NkdXdkemJQX1hmbVBSR0tmT1JYVHFYRzl5RzVEd19MN0hNVzUtSmZyOTZ6ZjhYRmhFd1BHNjhwanJmMW53UEVlc2M?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.722,
+          "storage_s_mm": 20.3,
+          "bulking_factor_bf": 1.3,
+          "p_crit_1hr_mm": 17.8,
+          "p_event_mm": 2.7
+        }
+      },
+      {
+        "etiqueta": "2020-02-19",
+        "riesgo_principal": 55,
+        "saturacion_sar": 22,
+        "lluvia_mm": 8.1,
+        "lluvia_3d_mm": 6.1,
+        "twi_medio": 10.74,
+        "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento Hídrico",
+        "estado_desc": "La mancha de saturación alcanza pie de monte. Capacidad de retención reducida a 21.1 mm. Factor de detritos 1.27x.",
+        "alertas_emitidas": [
+          {
+            "nivel": "warn",
+            "zona": "taquina",
+            "titulo": "PRE-ALERTA FÍSICA · Río Taquiña (55 pts)",
+            "detalle": "Saturación del 22% SAR alcanzando ápice aluvial. Umbral crítico reducido a 18.3 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.62,
+          "chutakawa": 0.22,
+          "pintumayu": 0.34,
+          "este": 0.43,
+          "tamborada": 0.36
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2020",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos masivo",
+          "titular": "Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya",
+          "medio": "Correo del Sur / Opinión Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFJidzVOZ3NMekxsbGZoelZYaUFNZXYycG5PTFdJOVB2LW55Qm92QWdCZmJWakQ5VHgtN1h3WDhaYUdpZ1VxbW5RTXdKLWlybXRpUVMwZ1JXaS1FRk1IUWlzWXhxOG1iX2NkdXdkemJQX1hmbVBSR0tmT1JYVHFYRzl5RzVEd19MN0hNVzUtSmZyOTZ6ZjhYRmhFd1BHNjhwanJmMW53UEVlc2M?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.702,
+          "storage_s_mm": 21.1,
+          "bulking_factor_bf": 1.27,
+          "p_crit_1hr_mm": 18.3,
+          "p_event_mm": 8.1
+        }
+      },
+      {
+        "etiqueta": "2020-02-20",
+        "riesgo_principal": 91,
+        "saturacion_sar": 22,
+        "lluvia_mm": 29.9,
+        "lluvia_3d_mm": 14.1,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "taquina",
+            "titulo": "ALERTA TEMPRANA · Río Taquiña (91 pts)",
+            "detalle": "Umbral P_crit: 17.8 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.84,
+          "chutakawa": 0.8,
+          "pintumayu": 0.94,
+          "este": 0.99,
+          "tamborada": 0.96
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2020",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos masivo",
+          "titular": "Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya",
+          "medio": "Correo del Sur / Opinión Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFJidzVOZ3NMekxsbGZoelZYaUFNZXYycG5PTFdJOVB2LW55Qm92QWdCZmJWakQ5VHgtN1h3WDhaYUdpZ1VxbW5RTXdKLWlybXRpUVMwZ1JXaS1FRk1IUWlzWXhxOG1iX2NkdXdkemJQX1hmbVBSR0tmT1JYVHFYRzl5RzVEd19MN0hNVzUtSmZyOTZ6ZjhYRmhFd1BHNjhwanJmMW53UEVlc2M?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.723,
+          "storage_s_mm": 20.2,
+          "bulking_factor_bf": 1.3,
+          "p_crit_1hr_mm": 17.8,
+          "p_event_mm": 29.9
+        }
+      },
+      {
+        "etiqueta": "2020-02-21",
+        "riesgo_principal": 94,
+        "saturacion_sar": 22,
+        "lluvia_mm": 22.2,
+        "lluvia_3d_mm": 40.7,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA ROJA MÁXIMA · Mazamorra / Flujo de detritos masivo",
+        "estado_desc": "Colapso de capacidad de infiltración. Bulking masivo (1.44x) y superación de capacidad del cauce. Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "taquina",
+            "titulo": "ALERTA ROJA OPERATIVA · Río Taquiña (94 pts)",
+            "detalle": "Núcleo crítico en cabecera con desborde hacia abanico aluvial. Ground-Truth: Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya (Correo del Sur / Opinión Bolivia)."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.98,
+          "chutakawa": 0.99,
+          "pintumayu": 0.91,
+          "este": 1.0,
+          "tamborada": 0.98
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2020",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos masivo",
+          "titular": "Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya",
+          "medio": "Correo del Sur / Opinión Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFJidzVOZ3NMekxsbGZoelZYaUFNZXYycG5PTFdJOVB2LW55Qm92QWdCZmJWakQ5VHgtN1h3WDhaYUdpZ1VxbW5RTXdKLWlybXRpUVMwZ1JXaS1FRk1IUWlzWXhxOG1iX2NkdXdkemJQX1hmbVBSR0tmT1JYVHFYRzl5RzVEd19MN0hNVzUtSmZyOTZ6ZjhYRmhFd1BHNjhwanJmMW53UEVlc2M?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.838,
+          "storage_s_mm": 15.7,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 15.1,
+          "p_event_mm": 22.2
+        }
+      },
+      {
+        "etiqueta": "2020-02-22",
+        "riesgo_principal": 78,
+        "saturacion_sar": 38,
+        "lluvia_mm": 12.6,
+        "lluvia_3d_mm": 60.2,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "taquina",
+            "titulo": "ALERTA TEMPRANA · Río Taquiña (78 pts)",
+            "detalle": "Umbral P_crit: 20.8 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.84,
+          "chutakawa": 0.48,
+          "pintumayu": 0.39,
+          "este": 0.53,
+          "tamborada": 0.81
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2020",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos masivo",
+          "titular": "Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya",
+          "medio": "Correo del Sur / Opinión Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFJidzVOZ3NMekxsbGZoelZYaUFNZXYycG5PTFdJOVB2LW55Qm92QWdCZmJWakQ5VHgtN1h3WDhaYUdpZ1VxbW5RTXdKLWlybXRpUVMwZ1JXaS1FRk1IUWlzWXhxOG1iX2NkdXdkemJQX1hmbVBSR0tmT1JYVHFYRzl5RzVEd19MN0hNVzUtSmZyOTZ6ZjhYRmhFd1BHNjhwanJmMW53UEVlc2M?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.851,
+          "storage_s_mm": 54.2,
+          "bulking_factor_bf": 1.68,
+          "p_crit_1hr_mm": 20.8,
+          "p_event_mm": 12.6
+        }
+      }
+    ]
+  },
+  "taquina_2018": {
+    "id": "taquina_2018",
+    "nombre": "Aluvión Taquiña 2018 · Catástrofe de Tiquipaya",
+    "cuencaPredeterminada": "taquina",
+    "dias": [
+      {
+        "etiqueta": "2018-02-03",
+        "riesgo_principal": 32,
+        "saturacion_sar": 22,
+        "lluvia_mm": 6.4,
+        "lluvia_3d_mm": 72.6,
+        "twi_medio": 10.74,
+        "estado_titulo": "Condición hidrológica basal · Río Taquiña",
+        "estado_desc": "Inicio de la ventana de monitoreo. Humedad subsuperficial (22% SAR) en cumbres. Sin riesgo inminente.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Seguimiento Preventivo · Río Taquiña",
+            "detalle": "Cuenca en observación con retención S(t) = 15.7 mm."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.22,
+          "chutakawa": 0.38,
+          "pintumayu": 0.38,
+          "este": 0.51,
+          "tamborada": 0.53
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2018",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña",
+          "medio": "eju.tv / Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1NRekUyaUVaNDktMHZKUTNHN2t3WldrQzZWZm96S05Remh5U194R3V2SkRGaDNNZHBQUnhjQWNRUU1WQ1JMVkpqeWgzd2liV1Q5c21Ka0t4R2l1dmRNb0U1MHV0LW1obXgxLWQ0eDlxeWFudkNhTllDbW9PcVBWV1NRSWNRX1V4cVFNZmdobEZucm9NVlc5Y0lGMGJnUjlnVGdHVnFLWQ?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.838,
+          "storage_s_mm": 15.7,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 15.1,
+          "p_event_mm": 6.4
+        }
+      },
+      {
+        "etiqueta": "2018-02-04",
+        "riesgo_principal": 40,
+        "saturacion_sar": 22,
+        "lluvia_mm": 6.4,
+        "lluvia_3d_mm": 63.2,
+        "twi_medio": 10.74,
+        "estado_titulo": "Humedecimiento progresivo en laderas · Río Taquiña",
+        "estado_desc": "Lluvias antecedentes aumentan el índice W_ant a 0.838. La saturación comienza a descender hacia Cota 2750m.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Humedecimiento Activo · C. Llavini (40 pts)",
+            "detalle": "Incremento de humedad en cabecera alta. El abanico aluvial permanece transitable."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.42,
+          "chutakawa": 0.43,
+          "pintumayu": 0.38,
+          "este": 0.51,
+          "tamborada": 1.0
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2018",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña",
+          "medio": "eju.tv / Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1NRekUyaUVaNDktMHZKUTNHN2t3WldrQzZWZm96S05Remh5U194R3V2SkRGaDNNZHBQUnhjQWNRUU1WQ1JMVkpqeWgzd2liV1Q5c21Ka0t4R2l1dmRNb0U1MHV0LW1obXgxLWQ0eDlxeWFudkNhTllDbW9PcVBWV1NRSWNRX1V4cVFNZmdobEZucm9NVlc5Y0lGMGJnUjlnVGdHVnFLWQ?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.838,
+          "storage_s_mm": 15.7,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 15.1,
+          "p_event_mm": 6.4
+        }
+      },
+      {
+        "etiqueta": "2018-02-05",
+        "riesgo_principal": 55,
+        "saturacion_sar": 42,
+        "lluvia_mm": 0.0,
+        "lluvia_3d_mm": 46.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento Hídrico",
+        "estado_desc": "La mancha de saturación alcanza pie de monte. Capacidad de retención reducida a 53.1 mm. Factor de detritos 1.7x.",
+        "alertas_emitidas": [
+          {
+            "nivel": "warn",
+            "zona": "taquina",
+            "titulo": "PRE-ALERTA FÍSICA · Río Taquiña (55 pts)",
+            "detalle": "Saturación del 42% SAR alcanzando ápice aluvial. Umbral crítico reducido a 20.5 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.62,
+          "chutakawa": 0.29,
+          "pintumayu": 0.28,
+          "este": 0.34,
+          "tamborada": 0.33
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2018",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña",
+          "medio": "eju.tv / Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1NRekUyaUVaNDktMHZKUTNHN2t3WldrQzZWZm96S05Remh5U194R3V2SkRGaDNNZHBQUnhjQWNRUU1WQ1JMVkpqeWgzd2liV1Q5c21Ka0t4R2l1dmRNb0U1MHV0LW1obXgxLWQ0eDlxeWFudkNhTllDbW9PcVBWV1NRSWNRX1V4cVFNZmdobEZucm9NVlc5Y0lGMGJnUjlnVGdHVnFLWQ?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.86,
+          "storage_s_mm": 53.1,
+          "bulking_factor_bf": 1.7,
+          "p_crit_1hr_mm": 20.5,
+          "p_event_mm": 0.0
+        }
+      },
+      {
+        "etiqueta": "2018-02-06",
+        "riesgo_principal": 78,
+        "saturacion_sar": 22,
+        "lluvia_mm": 6.3,
+        "lluvia_3d_mm": 12.8,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "taquina",
+            "titulo": "ALERTA TEMPRANA · Río Taquiña (78 pts)",
+            "detalle": "Umbral P_crit: 15.1 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.84,
+          "chutakawa": 0.29,
+          "pintumayu": 0.38,
+          "este": 0.49,
+          "tamborada": 0.42
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2018",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña",
+          "medio": "eju.tv / Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1NRekUyaUVaNDktMHZKUTNHN2t3WldrQzZWZm96S05Remh5U194R3V2SkRGaDNNZHBQUnhjQWNRUU1WQ1JMVkpqeWgzd2liV1Q5c21Ka0t4R2l1dmRNb0U1MHV0LW1obXgxLWQ0eDlxeWFudkNhTllDbW9PcVBWV1NRSWNRX1V4cVFNZmdobEZucm9NVlc5Y0lGMGJnUjlnVGdHVnFLWQ?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.838,
+          "storage_s_mm": 15.7,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 15.1,
+          "p_event_mm": 6.3
+        }
+      },
+      {
+        "etiqueta": "2018-02-07",
+        "riesgo_principal": 93,
+        "saturacion_sar": 22,
+        "lluvia_mm": 21.8,
+        "lluvia_3d_mm": 12.7,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA ROJA MÁXIMA · Mazamorra / Flujo de detritos",
+        "estado_desc": "Colapso de capacidad de infiltración. Bulking masivo (1.44x) y superación de capacidad del cauce. Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "taquina",
+            "titulo": "ALERTA ROJA OPERATIVA · Río Taquiña (93 pts)",
+            "detalle": "Núcleo crítico en cabecera con desborde hacia abanico aluvial. Ground-Truth: Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña (eju.tv / Los Tiempos)."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.98,
+          "chutakawa": 0.35,
+          "pintumayu": 0.88,
+          "este": 1.0,
+          "tamborada": 0.97
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2018",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña",
+          "medio": "eju.tv / Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1NRekUyaUVaNDktMHZKUTNHN2t3WldrQzZWZm96S05Remh5U194R3V2SkRGaDNNZHBQUnhjQWNRUU1WQ1JMVkpqeWgzd2liV1Q5c21Ka0t4R2l1dmRNb0U1MHV0LW1obXgxLWQ0eDlxeWFudkNhTllDbW9PcVBWV1NRSWNRX1V4cVFNZmdobEZucm9NVlc5Y0lGMGJnUjlnVGdHVnFLWQ?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.838,
+          "storage_s_mm": 15.7,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 15.1,
+          "p_event_mm": 21.8
+        }
+      },
+      {
+        "etiqueta": "2018-02-08",
+        "riesgo_principal": 92,
+        "saturacion_sar": 22,
+        "lluvia_mm": 20.9,
+        "lluvia_3d_mm": 28.1,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "taquina",
+            "titulo": "ALERTA TEMPRANA · Río Taquiña (92 pts)",
+            "detalle": "Umbral P_crit: 15.1 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.84,
+          "chutakawa": 0.47,
+          "pintumayu": 0.85,
+          "este": 1.0,
+          "tamborada": 0.94
+        },
+        "metadatos_evento": {
+          "id_evento": "taquina_2018",
+          "municipio": "Tiquipaya",
+          "cuenca_torrentera": "Río Taquiña",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Confirman muertos por mazamorra en Tiquipaya, desborde del río Taquiña",
+          "medio": "eju.tv / Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1NRekUyaUVaNDktMHZKUTNHN2t3WldrQzZWZm96S05Remh5U194R3V2SkRGaDNNZHBQUnhjQWNRUU1WQ1JMVkpqeWgzd2liV1Q5c21Ka0t4R2l1dmRNb0U1MHV0LW1obXgxLWQ0eDlxeWFudkNhTllDbW9PcVBWV1NRSWNRX1V4cVFNZmdobEZucm9NVlc5Y0lGMGJnUjlnVGdHVnFLWQ?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.838,
+          "storage_s_mm": 15.7,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 15.1,
+          "p_event_mm": 20.9
+        }
+      }
+    ]
+  },
+  "sacaba_2024": {
+    "id": "sacaba_2024",
+    "nombre": "Mazamorra Sacaba 2024 · Torrentera Ch'aki Mayu / Arocagua",
+    "cuencaPredeterminada": "este",
+    "dias": [
+      {
+        "etiqueta": "2024-02-22",
+        "riesgo_principal": 32,
+        "saturacion_sar": 22,
+        "lluvia_mm": 4.7,
+        "lluvia_3d_mm": 66.8,
+        "twi_medio": 10.74,
+        "estado_titulo": "Condición hidrológica basal · Torrentera Ch'aki Mayu / Arocagua",
+        "estado_desc": "Inicio de la ventana de monitoreo. Humedad subsuperficial (22% SAR) en cumbres. Sin riesgo inminente.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "este",
+            "titulo": "Seguimiento Preventivo · Torrentera Ch'aki Mayu / Arocagua",
+            "detalle": "Cuenca en observación con retención S(t) = 12.1 mm."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.35,
+          "chutakawa": 0.19,
+          "pintumayu": 0.33,
+          "este": 0.22,
+          "tamborada": 0.37
+        },
+        "metadatos_evento": {
+          "id_evento": "sacaba_2024",
+          "municipio": "Sacaba",
+          "cuenca_torrentera": "Torrentera Ch'aki Mayu / Arocagua",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Mazamorra en Sacaba entierra casas y autos y destruye cultivos",
+          "medio": "ANF Agencia de Noticias Fides Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTV5UnV2c0FlbmFlNGVTX2NBSGFWZGpMLWRFRkdJR2p5VnNvc0ZJaEg2eG1nMXpuTW5venBnOHNsZVBYX24xMkFpTHdfSGZyZ1U5VF85dXpkZEhXNHI1LVhXZFp1dW95LU9kRmRTQ1hMUktwc2RUUWJlazBPckllYU5ENzRNdVBlbkVFTVk5OTlGdjd1eWV2WXA5b0ZsTnFQVld2NW1iZGVPZ21xYjltRDJoX1gzYjdfVDNvUjJaMl9iR21JOEd2VEtPa3FJdURlRWxuLUFFSDk?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Millumayu",
+          "w_ant": 0.934,
+          "storage_s_mm": 12.1,
+          "bulking_factor_bf": 1.47,
+          "p_crit_1hr_mm": 14.4,
+          "p_event_mm": 4.7
+        }
+      },
+      {
+        "etiqueta": "2024-02-23",
+        "riesgo_principal": 48,
+        "saturacion_sar": 22,
+        "lluvia_mm": 12.3,
+        "lluvia_3d_mm": 42.9,
+        "twi_medio": 10.74,
+        "estado_titulo": "Humedecimiento progresivo en laderas · Torrentera Ch'aki Mayu / Arocagua",
+        "estado_desc": "Lluvias antecedentes aumentan el índice W_ant a 0.912. La saturación comienza a descender hacia Cota 2750m.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "este",
+            "titulo": "Humedecimiento Activo · C. Millumayu (48 pts)",
+            "detalle": "Incremento de humedad en cabecera alta. El abanico aluvial permanece transitable."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.59,
+          "chutakawa": 0.34,
+          "pintumayu": 0.51,
+          "este": 0.42,
+          "tamborada": 0.96
+        },
+        "metadatos_evento": {
+          "id_evento": "sacaba_2024",
+          "municipio": "Sacaba",
+          "cuenca_torrentera": "Torrentera Ch'aki Mayu / Arocagua",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Mazamorra en Sacaba entierra casas y autos y destruye cultivos",
+          "medio": "ANF Agencia de Noticias Fides Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTV5UnV2c0FlbmFlNGVTX2NBSGFWZGpMLWRFRkdJR2p5VnNvc0ZJaEg2eG1nMXpuTW5venBnOHNsZVBYX24xMkFpTHdfSGZyZ1U5VF85dXpkZEhXNHI1LVhXZFp1dW95LU9kRmRTQ1hMUktwc2RUUWJlazBPckllYU5ENzRNdVBlbkVFTVk5OTlGdjd1eWV2WXA5b0ZsTnFQVld2NW1iZGVPZ21xYjltRDJoX1gzYjdfVDNvUjJaMl9iR21JOEd2VEtPa3FJdURlRWxuLUFFSDk?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Millumayu",
+          "w_ant": 0.912,
+          "storage_s_mm": 12.9,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 14.9,
+          "p_event_mm": 12.3
+        }
+      },
+      {
+        "etiqueta": "2024-02-24",
+        "riesgo_principal": 64,
+        "saturacion_sar": 22,
+        "lluvia_mm": 22.0,
+        "lluvia_3d_mm": 31.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento Hídrico",
+        "estado_desc": "La mancha de saturación alcanza pie de monte. Capacidad de retención reducida a 11.0 mm. Factor de detritos 1.5x.",
+        "alertas_emitidas": [
+          {
+            "nivel": "warn",
+            "zona": "este",
+            "titulo": "PRE-ALERTA FÍSICA · Torrentera Ch'aki Mayu / Arocagua (64 pts)",
+            "detalle": "Saturación del 22% SAR alcanzando ápice aluvial. Umbral crítico reducido a 13.7 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.98,
+          "chutakawa": 0.33,
+          "pintumayu": 0.88,
+          "este": 0.62,
+          "tamborada": 0.96
+        },
+        "metadatos_evento": {
+          "id_evento": "sacaba_2024",
+          "municipio": "Sacaba",
+          "cuenca_torrentera": "Torrentera Ch'aki Mayu / Arocagua",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Mazamorra en Sacaba entierra casas y autos y destruye cultivos",
+          "medio": "ANF Agencia de Noticias Fides Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTV5UnV2c0FlbmFlNGVTX2NBSGFWZGpMLWRFRkdJR2p5VnNvc0ZJaEg2eG1nMXpuTW5venBnOHNsZVBYX24xMkFpTHdfSGZyZ1U5VF85dXpkZEhXNHI1LVhXZFp1dW95LU9kRmRTQ1hMUktwc2RUUWJlazBPckllYU5ENzRNdVBlbkVFTVk5OTlGdjd1eWV2WXA5b0ZsTnFQVld2NW1iZGVPZ21xYjltRDJoX1gzYjdfVDNvUjJaMl9iR21JOEd2VEtPa3FJdURlRWxuLUFFSDk?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Millumayu",
+          "w_ant": 0.962,
+          "storage_s_mm": 11.0,
+          "bulking_factor_bf": 1.5,
+          "p_crit_1hr_mm": 13.7,
+          "p_event_mm": 22.0
+        }
+      },
+      {
+        "etiqueta": "2024-02-25",
+        "riesgo_principal": 98,
+        "saturacion_sar": 22,
+        "lluvia_mm": 48.8,
+        "lluvia_3d_mm": 39.0,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "este",
+            "titulo": "ALERTA TEMPRANA · Torrentera Ch'aki Mayu / Arocagua (98 pts)",
+            "detalle": "Umbral P_crit: 13.3 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.99,
+          "chutakawa": 0.26,
+          "pintumayu": 1.0,
+          "este": 0.84,
+          "tamborada": 1.0
+        },
+        "metadatos_evento": {
+          "id_evento": "sacaba_2024",
+          "municipio": "Sacaba",
+          "cuenca_torrentera": "Torrentera Ch'aki Mayu / Arocagua",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Mazamorra en Sacaba entierra casas y autos y destruye cultivos",
+          "medio": "ANF Agencia de Noticias Fides Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTV5UnV2c0FlbmFlNGVTX2NBSGFWZGpMLWRFRkdJR2p5VnNvc0ZJaEg2eG1nMXpuTW5venBnOHNsZVBYX24xMkFpTHdfSGZyZ1U5VF85dXpkZEhXNHI1LVhXZFp1dW95LU9kRmRTQ1hMUktwc2RUUWJlazBPckllYU5ENzRNdVBlbkVFTVk5OTlGdjd1eWV2WXA5b0ZsTnFQVld2NW1iZGVPZ21xYjltRDJoX1gzYjdfVDNvUjJaMl9iR21JOEd2VEtPa3FJdURlRWxuLUFFSDk?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Millumayu",
+          "w_ant": 0.977,
+          "storage_s_mm": 10.5,
+          "bulking_factor_bf": 1.52,
+          "p_crit_1hr_mm": 13.3,
+          "p_event_mm": 48.8
+        }
+      },
+      {
+        "etiqueta": "2024-02-26",
+        "riesgo_principal": 98,
+        "saturacion_sar": 22,
+        "lluvia_mm": 41.6,
+        "lluvia_3d_mm": 83.1,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA ROJA MÁXIMA · Mazamorra / Flujo de detritos",
+        "estado_desc": "Colapso de capacidad de infiltración. Bulking masivo (1.52x) y superación de capacidad del cauce. Mazamorra en Sacaba entierra casas y autos y destruye cultivos.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "este",
+            "titulo": "ALERTA ROJA OPERATIVA · Torrentera Ch'aki Mayu / Arocagua (98 pts)",
+            "detalle": "Núcleo crítico en cabecera con desborde hacia abanico aluvial. Ground-Truth: Mazamorra en Sacaba entierra casas y autos y destruye cultivos (ANF Agencia de Noticias Fides Bolivia)."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.99,
+          "chutakawa": 0.24,
+          "pintumayu": 1.0,
+          "este": 0.98,
+          "tamborada": 1.0
+        },
+        "metadatos_evento": {
+          "id_evento": "sacaba_2024",
+          "municipio": "Sacaba",
+          "cuenca_torrentera": "Torrentera Ch'aki Mayu / Arocagua",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Mazamorra en Sacaba entierra casas y autos y destruye cultivos",
+          "medio": "ANF Agencia de Noticias Fides Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTV5UnV2c0FlbmFlNGVTX2NBSGFWZGpMLWRFRkdJR2p5VnNvc0ZJaEg2eG1nMXpuTW5venBnOHNsZVBYX24xMkFpTHdfSGZyZ1U5VF85dXpkZEhXNHI1LVhXZFp1dW95LU9kRmRTQ1hMUktwc2RUUWJlazBPckllYU5ENzRNdVBlbkVFTVk5OTlGdjd1eWV2WXA5b0ZsTnFQVld2NW1iZGVPZ21xYjltRDJoX1gzYjdfVDNvUjJaMl9iR21JOEd2VEtPa3FJdURlRWxuLUFFSDk?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Millumayu",
+          "w_ant": 0.977,
+          "storage_s_mm": 10.5,
+          "bulking_factor_bf": 1.52,
+          "p_crit_1hr_mm": 13.3,
+          "p_event_mm": 41.6
+        }
+      },
+      {
+        "etiqueta": "2024-02-27",
+        "riesgo_principal": 98,
+        "saturacion_sar": 22,
+        "lluvia_mm": 22.7,
+        "lluvia_3d_mm": 112.4,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "este",
+            "titulo": "ALERTA TEMPRANA · Torrentera Ch'aki Mayu / Arocagua (98 pts)",
+            "detalle": "Umbral P_crit: 13.3 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.99,
+          "chutakawa": 0.24,
+          "pintumayu": 0.93,
+          "este": 0.84,
+          "tamborada": 0.98
+        },
+        "metadatos_evento": {
+          "id_evento": "sacaba_2024",
+          "municipio": "Sacaba",
+          "cuenca_torrentera": "Torrentera Ch'aki Mayu / Arocagua",
+          "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+          "titular": "Mazamorra en Sacaba entierra casas y autos y destruye cultivos",
+          "medio": "ANF Agencia de Noticias Fides Bolivia",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTV5UnV2c0FlbmFlNGVTX2NBSGFWZGpMLWRFRkdJR2p5VnNvc0ZJaEg2eG1nMXpuTW5venBnOHNsZVBYX24xMkFpTHdfSGZyZ1U5VF85dXpkZEhXNHI1LVhXZFp1dW95LU9kRmRTQ1hMUktwc2RUUWJlazBPckllYU5ENzRNdVBlbkVFTVk5OTlGdjd1eWV2WXA5b0ZsTnFQVld2NW1iZGVPZ21xYjltRDJoX1gzYjdfVDNvUjJaMl9iR21JOEd2VEtPa3FJdURlRWxuLUFFSDk?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Millumayu",
+          "w_ant": 0.977,
+          "storage_s_mm": 10.5,
+          "bulking_factor_bf": 1.52,
+          "p_crit_1hr_mm": 13.3,
+          "p_event_mm": 22.7
+        }
+      }
+    ]
+  },
+  "pintumayu_2021": {
+    "id": "pintumayu_2021",
+    "nombre": "Desborde Torrenteras Norte 2021 · Pintumayu / Pajcha",
+    "cuencaPredeterminada": "pintumayu",
+    "dias": [
+      {
+        "etiqueta": "2021-11-22",
+        "riesgo_principal": 13,
+        "saturacion_sar": 15,
+        "lluvia_mm": 0.0,
+        "lluvia_3d_mm": 4.8,
+        "twi_medio": 10.74,
+        "estado_titulo": "Condición hidrológica basal · Torrentera Pintumayu",
+        "estado_desc": "Inicio de la ventana de monitoreo. Humedad subsuperficial (15% SAR) en cumbres. Sin riesgo inminente.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "pintumayu",
+            "titulo": "Seguimiento Preventivo · Torrentera Pintumayu",
+            "detalle": "Cuenca en observación con retención S(t) = 46.1 mm."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.16,
+          "chutakawa": 0.16,
+          "pintumayu": 0.22,
+          "este": 0.17,
+          "tamborada": 0.15
+        },
+        "metadatos_evento": {
+          "id_evento": "pintumayu_2021",
+          "municipio": "Cochabamba (Cercado)",
+          "cuenca_torrentera": "Torrentera Pintumayu",
+          "tipo_fenomeno": "Desborde de torrentera pluvial",
+          "titular": "Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu",
+          "medio": "Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNUSjlMenp4ZVoxcWpCUjZzcS1FYnpaLWQwTHR2ZEFDN2RteEwwdGVFWmhsZ1BYNTctUk12WmUxSXF4UXFwdmt6ZjZESVdKZGN1THJZNkZoZGJWQ2JIV2JxYm5hazA2cjNxWVdmcVhyMzVLMXRVRmdZNmg3cVFlNlZ6YkptcTI0aWoyM09tZFV4Y0hlNTVrRmMtNGhreDZxN2ROaVItajVOck91WkswekhEb0NaVzVQWGF3bVRR?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Higuerani",
+          "w_ant": 0.415,
+          "storage_s_mm": 46.1,
+          "bulking_factor_bf": 1.02,
+          "p_crit_1hr_mm": 28.5,
+          "p_event_mm": 0.0
+        }
+      },
+      {
+        "etiqueta": "2021-11-23",
+        "riesgo_principal": 38,
+        "saturacion_sar": 26,
+        "lluvia_mm": 0.7,
+        "lluvia_3d_mm": 4.3,
+        "twi_medio": 10.74,
+        "estado_titulo": "Humedecimiento progresivo en laderas · Torrentera Pintumayu",
+        "estado_desc": "Lluvias antecedentes aumentan el índice W_ant a 0.397. La saturación comienza a descender hacia Cota 2750m.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "pintumayu",
+            "titulo": "Humedecimiento Activo · C. Pintu Mayu (38 pts)",
+            "detalle": "Incremento de humedad en cabecera alta. El abanico aluvial permanece transitable."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.15,
+          "chutakawa": 0.15,
+          "pintumayu": 0.42,
+          "este": 0.16,
+          "tamborada": 0.14
+        },
+        "metadatos_evento": {
+          "id_evento": "pintumayu_2021",
+          "municipio": "Cochabamba (Cercado)",
+          "cuenca_torrentera": "Torrentera Pintumayu",
+          "tipo_fenomeno": "Desborde de torrentera pluvial",
+          "titular": "Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu",
+          "medio": "Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNUSjlMenp4ZVoxcWpCUjZzcS1FYnpaLWQwTHR2ZEFDN2RteEwwdGVFWmhsZ1BYNTctUk12WmUxSXF4UXFwdmt6ZjZESVdKZGN1THJZNkZoZGJWQ2JIV2JxYm5hazA2cjNxWVdmcVhyMzVLMXRVRmdZNmg3cVFlNlZ6YkptcTI0aWoyM09tZFV4Y0hlNTVrRmMtNGhreDZxN2ROaVItajVOck91WkswekhEb0NaVzVQWGF3bVRR?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Pintu Mayu",
+          "w_ant": 0.397,
+          "storage_s_mm": 118.9,
+          "bulking_factor_bf": 1.07,
+          "p_crit_1hr_mm": 39.9,
+          "p_event_mm": 0.7
+        }
+      },
+      {
+        "etiqueta": "2021-11-24",
+        "riesgo_principal": 55,
+        "saturacion_sar": 15,
+        "lluvia_mm": 5.5,
+        "lluvia_3d_mm": 1.7,
+        "twi_medio": 10.74,
+        "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento Hídrico",
+        "estado_desc": "La mancha de saturación alcanza pie de monte. Capacidad de retención reducida a 48.1 mm. Factor de detritos 1.02x.",
+        "alertas_emitidas": [
+          {
+            "nivel": "warn",
+            "zona": "pintumayu",
+            "titulo": "PRE-ALERTA FÍSICA · Torrentera Pintumayu (55 pts)",
+            "detalle": "Saturación del 15% SAR alcanzando ápice aluvial. Umbral crítico reducido a 29.2 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.17,
+          "chutakawa": 0.16,
+          "pintumayu": 0.62,
+          "este": 0.19,
+          "tamborada": 0.17
+        },
+        "metadatos_evento": {
+          "id_evento": "pintumayu_2021",
+          "municipio": "Cochabamba (Cercado)",
+          "cuenca_torrentera": "Torrentera Pintumayu",
+          "tipo_fenomeno": "Desborde de torrentera pluvial",
+          "titular": "Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu",
+          "medio": "Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNUSjlMenp4ZVoxcWpCUjZzcS1FYnpaLWQwTHR2ZEFDN2RteEwwdGVFWmhsZ1BYNTctUk12WmUxSXF4UXFwdmt6ZjZESVdKZGN1THJZNkZoZGJWQ2JIV2JxYm5hazA2cjNxWVdmcVhyMzVLMXRVRmdZNmg3cVFlNlZ6YkptcTI0aWoyM09tZFV4Y0hlNTVrRmMtNGhreDZxN2ROaVItajVOck91WkswekhEb0NaVzVQWGF3bVRR?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Higuerani",
+          "w_ant": 0.383,
+          "storage_s_mm": 48.1,
+          "bulking_factor_bf": 1.02,
+          "p_crit_1hr_mm": 29.2,
+          "p_event_mm": 5.5
+        }
+      },
+      {
+        "etiqueta": "2021-11-25",
+        "riesgo_principal": 78,
+        "saturacion_sar": 15,
+        "lluvia_mm": 6.0,
+        "lluvia_3d_mm": 6.2,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "pintumayu",
+            "titulo": "ALERTA TEMPRANA · Torrentera Pintumayu (78 pts)",
+            "detalle": "Umbral P_crit: 28.7 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.19,
+          "chutakawa": 0.17,
+          "pintumayu": 0.84,
+          "este": 0.21,
+          "tamborada": 0.19
+        },
+        "metadatos_evento": {
+          "id_evento": "pintumayu_2021",
+          "municipio": "Cochabamba (Cercado)",
+          "cuenca_torrentera": "Torrentera Pintumayu",
+          "tipo_fenomeno": "Desborde de torrentera pluvial",
+          "titular": "Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu",
+          "medio": "Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNUSjlMenp4ZVoxcWpCUjZzcS1FYnpaLWQwTHR2ZEFDN2RteEwwdGVFWmhsZ1BYNTctUk12WmUxSXF4UXFwdmt6ZjZESVdKZGN1THJZNkZoZGJWQ2JIV2JxYm5hazA2cjNxWVdmcVhyMzVLMXRVRmdZNmg3cVFlNlZ6YkptcTI0aWoyM09tZFV4Y0hlNTVrRmMtNGhreDZxN2ROaVItajVOck91WkswekhEb0NaVzVQWGF3bVRR?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Higuerani",
+          "w_ant": 0.41,
+          "storage_s_mm": 46.5,
+          "bulking_factor_bf": 1.02,
+          "p_crit_1hr_mm": 28.7,
+          "p_event_mm": 6.0
+        }
+      },
+      {
+        "etiqueta": "2021-11-26",
+        "riesgo_principal": 90,
+        "saturacion_sar": 16,
+        "lluvia_mm": 10.1,
+        "lluvia_3d_mm": 12.2,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA ROJA MÁXIMA · Desborde de torrentera pluvial",
+        "estado_desc": "Colapso de capacidad de infiltración. Bulking masivo (1.04x) y superación de capacidad del cauce. Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "pintumayu",
+            "titulo": "ALERTA ROJA OPERATIVA · Torrentera Pintumayu (90 pts)",
+            "detalle": "Núcleo crítico en cabecera con desborde hacia abanico aluvial. Ground-Truth: Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu (Los Tiempos)."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.29,
+          "chutakawa": 0.28,
+          "pintumayu": 0.98,
+          "este": 0.33,
+          "tamborada": 0.27
+        },
+        "metadatos_evento": {
+          "id_evento": "pintumayu_2021",
+          "municipio": "Cochabamba (Cercado)",
+          "cuenca_torrentera": "Torrentera Pintumayu",
+          "tipo_fenomeno": "Desborde de torrentera pluvial",
+          "titular": "Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu",
+          "medio": "Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNUSjlMenp4ZVoxcWpCUjZzcS1FYnpaLWQwTHR2ZEFDN2RteEwwdGVFWmhsZ1BYNTctUk12WmUxSXF4UXFwdmt6ZjZESVdKZGN1THJZNkZoZGJWQ2JIV2JxYm5hazA2cjNxWVdmcVhyMzVLMXRVRmdZNmg3cVFlNlZ6YkptcTI0aWoyM09tZFV4Y0hlNTVrRmMtNGhreDZxN2ROaVItajVOck91WkswekhEb0NaVzVQWGF3bVRR?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Higuerani",
+          "w_ant": 0.498,
+          "storage_s_mm": 41.1,
+          "bulking_factor_bf": 1.04,
+          "p_crit_1hr_mm": 26.8,
+          "p_event_mm": 10.1
+        }
+      },
+      {
+        "etiqueta": "2021-11-27",
+        "riesgo_principal": 78,
+        "saturacion_sar": 16,
+        "lluvia_mm": 2.0,
+        "lluvia_3d_mm": 21.6,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "pintumayu",
+            "titulo": "ALERTA TEMPRANA · Torrentera Pintumayu (78 pts)",
+            "detalle": "Umbral P_crit: 24.8 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.21,
+          "chutakawa": 0.2,
+          "pintumayu": 0.84,
+          "este": 0.24,
+          "tamborada": 0.23
+        },
+        "metadatos_evento": {
+          "id_evento": "pintumayu_2021",
+          "municipio": "Cochabamba (Cercado)",
+          "cuenca_torrentera": "Torrentera Pintumayu",
+          "tipo_fenomeno": "Desborde de torrentera pluvial",
+          "titular": "Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu",
+          "medio": "Los Tiempos",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNUSjlMenp4ZVoxcWpCUjZzcS1FYnpaLWQwTHR2ZEFDN2RteEwwdGVFWmhsZ1BYNTctUk12WmUxSXF4UXFwdmt6ZjZESVdKZGN1THJZNkZoZGJWQ2JIV2JxYm5hazA2cjNxWVdmcVhyMzVLMXRVRmdZNmg3cVFlNlZ6YkptcTI0aWoyM09tZFV4Y0hlNTVrRmMtNGhreDZxN2ROaVItajVOck91WkswekhEb0NaVzVQWGF3bVRR?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Higuerani",
+          "w_ant": 0.589,
+          "storage_s_mm": 35.7,
+          "bulking_factor_bf": 1.06,
+          "p_crit_1hr_mm": 24.8,
+          "p_event_mm": 2.0
+        }
+      }
+    ]
+  },
+  "colcapirhua_2025": {
+    "id": "colcapirhua_2025",
+    "nombre": "Anegamiento Colcapirhua 2025 · Duralit / Chijllawiri",
+    "cuencaPredeterminada": "tamborada",
+    "dias": [
+      {
+        "etiqueta": "2025-01-17",
+        "riesgo_principal": 32,
+        "saturacion_sar": 22,
+        "lluvia_mm": 39.6,
+        "lluvia_3d_mm": 19.4,
+        "twi_medio": 10.74,
+        "estado_titulo": "Condición hidrológica basal · Río Chijllawiri / Torrentera Duralit",
+        "estado_desc": "Inicio de la ventana de monitoreo. Humedad subsuperficial (22% SAR) en cumbres. Sin riesgo inminente.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "tamborada",
+            "titulo": "Seguimiento Preventivo · Río Chijllawiri / Torrentera Duralit",
+            "detalle": "Cuenca en observación con retención S(t) = 20.6 mm."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.99,
+          "chutakawa": 0.29,
+          "pintumayu": 1.0,
+          "este": 1.0,
+          "tamborada": 0.22
+        },
+        "metadatos_evento": {
+          "id_evento": "colcapirhua_2025",
+          "municipio": "Colcapirhua",
+          "cuenca_torrentera": "Río Chijllawiri / Torrentera Duralit",
+          "tipo_fenomeno": "Desborde y anegamiento en llanura",
+          "titular": "Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit",
+          "medio": "Red Uno",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjV2YVE4UjF2VzFkSVBSQUREZldUUEkzOTgyTUdaNXp4RlE0X3dhczgyaHJzZlRCV0JSbTZGTWhlcE1mZ24wZWpoZjZTd2NYdVFmQU9ZT1ltY0EtcHFpSWl0UGNlbmZJWXFISS0xLVRrNHFBTzNINXd4d3NjRXcwOUF3d2t2R3Bua3pSYjRlQnBFb2xqaGNDWHF6Z21YNUxjSVltSlAyWExxa2JjMS1YcEotb08zMC1YXzEtOE50VjZkcDg2RExOZzJwbw?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Tunasani",
+          "w_ant": 0.948,
+          "storage_s_mm": 20.6,
+          "bulking_factor_bf": 1.25,
+          "p_crit_1hr_mm": 17.9,
+          "p_event_mm": 39.6
+        }
+      },
+      {
+        "etiqueta": "2025-01-18",
+        "riesgo_principal": 45,
+        "saturacion_sar": 22,
+        "lluvia_mm": 7.7,
+        "lluvia_3d_mm": 59.0,
+        "twi_medio": 10.74,
+        "estado_titulo": "Humedecimiento progresivo en laderas · Río Chijllawiri / Torrentera Duralit",
+        "estado_desc": "Lluvias antecedentes aumentan el índice W_ant a 0.952. La saturación comienza a descender hacia Cota 2750m.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "tamborada",
+            "titulo": "Humedecimiento Activo · C. Pucarita (45 pts)",
+            "detalle": "Incremento de humedad en cabecera alta. El abanico aluvial permanece transitable."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.46,
+          "chutakawa": 0.31,
+          "pintumayu": 0.41,
+          "este": 0.56,
+          "tamborada": 0.42
+        },
+        "metadatos_evento": {
+          "id_evento": "colcapirhua_2025",
+          "municipio": "Colcapirhua",
+          "cuenca_torrentera": "Río Chijllawiri / Torrentera Duralit",
+          "tipo_fenomeno": "Desborde y anegamiento en llanura",
+          "titular": "Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit",
+          "medio": "Red Uno",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjV2YVE4UjF2VzFkSVBSQUREZldUUEkzOTgyTUdaNXp4RlE0X3dhczgyaHJzZlRCV0JSbTZGTWhlcE1mZ24wZWpoZjZTd2NYdVFmQU9ZT1ltY0EtcHFpSWl0UGNlbmZJWXFISS0xLVRrNHFBTzNINXd4d3NjRXcwOUF3d2t2R3Bua3pSYjRlQnBFb2xqaGNDWHF6Z21YNUxjSVltSlAyWExxa2JjMS1YcEotb08zMC1YXzEtOE50VjZkcDg2RExOZzJwbw?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Pucarita",
+          "w_ant": 0.952,
+          "storage_s_mm": 14.2,
+          "bulking_factor_bf": 1.14,
+          "p_crit_1hr_mm": 17.5,
+          "p_event_mm": 7.7
+        }
+      },
+      {
+        "etiqueta": "2025-01-19",
+        "riesgo_principal": 64,
+        "saturacion_sar": 22,
+        "lluvia_mm": 14.8,
+        "lluvia_3d_mm": 66.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento Hídrico",
+        "estado_desc": "La mancha de saturación alcanza pie de monte. Capacidad de retención reducida a 14.2 mm. Factor de detritos 1.14x.",
+        "alertas_emitidas": [
+          {
+            "nivel": "warn",
+            "zona": "tamborada",
+            "titulo": "PRE-ALERTA FÍSICA · Río Chijllawiri / Torrentera Duralit (64 pts)",
+            "detalle": "Saturación del 22% SAR alcanzando ápice aluvial. Umbral crítico reducido a 17.5 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.52,
+          "chutakawa": 0.32,
+          "pintumayu": 0.45,
+          "este": 0.62,
+          "tamborada": 0.62
+        },
+        "metadatos_evento": {
+          "id_evento": "colcapirhua_2025",
+          "municipio": "Colcapirhua",
+          "cuenca_torrentera": "Río Chijllawiri / Torrentera Duralit",
+          "tipo_fenomeno": "Desborde y anegamiento en llanura",
+          "titular": "Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit",
+          "medio": "Red Uno",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjV2YVE4UjF2VzFkSVBSQUREZldUUEkzOTgyTUdaNXp4RlE0X3dhczgyaHJzZlRCV0JSbTZGTWhlcE1mZ24wZWpoZjZTd2NYdVFmQU9ZT1ltY0EtcHFpSWl0UGNlbmZJWXFISS0xLVRrNHFBTzNINXd4d3NjRXcwOUF3d2t2R3Bua3pSYjRlQnBFb2xqaGNDWHF6Z21YNUxjSVltSlAyWExxa2JjMS1YcEotb08zMC1YXzEtOE50VjZkcDg2RExOZzJwbw?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Pucarita",
+          "w_ant": 0.952,
+          "storage_s_mm": 14.2,
+          "bulking_factor_bf": 1.14,
+          "p_crit_1hr_mm": 17.5,
+          "p_event_mm": 14.8
+        }
+      },
+      {
+        "etiqueta": "2025-01-20",
+        "riesgo_principal": 78,
+        "saturacion_sar": 22,
+        "lluvia_mm": 17.8,
+        "lluvia_3d_mm": 56.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "tamborada",
+            "titulo": "ALERTA TEMPRANA · Río Chijllawiri / Torrentera Duralit (78 pts)",
+            "detalle": "Umbral P_crit: 17.5 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.47,
+          "chutakawa": 0.47,
+          "pintumayu": 0.41,
+          "este": 0.58,
+          "tamborada": 0.84
+        },
+        "metadatos_evento": {
+          "id_evento": "colcapirhua_2025",
+          "municipio": "Colcapirhua",
+          "cuenca_torrentera": "Río Chijllawiri / Torrentera Duralit",
+          "tipo_fenomeno": "Desborde y anegamiento en llanura",
+          "titular": "Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit",
+          "medio": "Red Uno",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjV2YVE4UjF2VzFkSVBSQUREZldUUEkzOTgyTUdaNXp4RlE0X3dhczgyaHJzZlRCV0JSbTZGTWhlcE1mZ24wZWpoZjZTd2NYdVFmQU9ZT1ltY0EtcHFpSWl0UGNlbmZJWXFISS0xLVRrNHFBTzNINXd4d3NjRXcwOUF3d2t2R3Bua3pSYjRlQnBFb2xqaGNDWHF6Z21YNUxjSVltSlAyWExxa2JjMS1YcEotb08zMC1YXzEtOE50VjZkcDg2RExOZzJwbw?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Pucarita",
+          "w_ant": 0.952,
+          "storage_s_mm": 14.2,
+          "bulking_factor_bf": 1.14,
+          "p_crit_1hr_mm": 17.5,
+          "p_event_mm": 17.8
+        }
+      },
+      {
+        "etiqueta": "2025-01-21",
+        "riesgo_principal": 90,
+        "saturacion_sar": 22,
+        "lluvia_mm": 18.2,
+        "lluvia_3d_mm": 24.6,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA ROJA MÁXIMA · Desborde y anegamiento en llanura",
+        "estado_desc": "Colapso de capacidad de infiltración. Bulking masivo (1.14x) y superación de capacidad del cauce. Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "tamborada",
+            "titulo": "ALERTA ROJA OPERATIVA · Río Chijllawiri / Torrentera Duralit (90 pts)",
+            "detalle": "Núcleo crítico en cabecera con desborde hacia abanico aluvial. Ground-Truth: Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit (Red Uno)."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.49,
+          "chutakawa": 0.33,
+          "pintumayu": 0.43,
+          "este": 0.59,
+          "tamborada": 0.98
+        },
+        "metadatos_evento": {
+          "id_evento": "colcapirhua_2025",
+          "municipio": "Colcapirhua",
+          "cuenca_torrentera": "Río Chijllawiri / Torrentera Duralit",
+          "tipo_fenomeno": "Desborde y anegamiento en llanura",
+          "titular": "Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit",
+          "medio": "Red Uno",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjV2YVE4UjF2VzFkSVBSQUREZldUUEkzOTgyTUdaNXp4RlE0X3dhczgyaHJzZlRCV0JSbTZGTWhlcE1mZ24wZWpoZjZTd2NYdVFmQU9ZT1ltY0EtcHFpSWl0UGNlbmZJWXFISS0xLVRrNHFBTzNINXd4d3NjRXcwOUF3d2t2R3Bua3pSYjRlQnBFb2xqaGNDWHF6Z21YNUxjSVltSlAyWExxa2JjMS1YcEotb08zMC1YXzEtOE50VjZkcDg2RExOZzJwbw?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Pucarita",
+          "w_ant": 0.952,
+          "storage_s_mm": 14.2,
+          "bulking_factor_bf": 1.14,
+          "p_crit_1hr_mm": 17.5,
+          "p_event_mm": 18.2
+        }
+      },
+      {
+        "etiqueta": "2025-01-22",
+        "riesgo_principal": 94,
+        "saturacion_sar": 22,
+        "lluvia_mm": 22.9,
+        "lluvia_3d_mm": 25.4,
+        "twi_medio": 10.74,
+        "estado_titulo": "ALERTA CRÍTICA · Saturación Extrema en Cuenca",
+        "estado_desc": "Núcleo saturado en cabecera. Alta propensión a mazamorra ante tormentas convectivas de 1 hora.",
+        "alertas_emitidas": [
+          {
+            "nivel": "crit",
+            "zona": "tamborada",
+            "titulo": "ALERTA TEMPRANA · Río Chijllawiri / Torrentera Duralit (94 pts)",
+            "detalle": "Umbral P_crit: 17.5 mm/h. Se recomienda activación de cuadrillas y evacuación preventiva."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.99,
+          "chutakawa": 0.75,
+          "pintumayu": 0.92,
+          "este": 1.0,
+          "tamborada": 0.84
+        },
+        "metadatos_evento": {
+          "id_evento": "colcapirhua_2025",
+          "municipio": "Colcapirhua",
+          "cuenca_torrentera": "Río Chijllawiri / Torrentera Duralit",
+          "tipo_fenomeno": "Desborde y anegamiento en llanura",
+          "titular": "Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit",
+          "medio": "Red Uno",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjV2YVE4UjF2VzFkSVBSQUREZldUUEkzOTgyTUdaNXp4RlE0X3dhczgyaHJzZlRCV0JSbTZGTWhlcE1mZ24wZWpoZjZTd2NYdVFmQU9ZT1ltY0EtcHFpSWl0UGNlbmZJWXFISS0xLVRrNHFBTzNINXd4d3NjRXcwOUF3d2t2R3Bua3pSYjRlQnBFb2xqaGNDWHF6Z21YNUxjSVltSlAyWExxa2JjMS1YcEotb08zMC1YXzEtOE50VjZkcDg2RExOZzJwbw?oc=5"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Pucarita",
+          "w_ant": 0.952,
+          "storage_s_mm": 14.2,
+          "bulking_factor_bf": 1.14,
+          "p_crit_1hr_mm": 17.5,
+          "p_event_mm": 22.9
+        }
+      }
+    ]
+  },
+  "en_vivo": {
+    "id": "en_vivo",
+    "nombre": "Monitoreo En Vivo · Noviembre 2026 (Semana Actual)",
+    "cuencaPredeterminada": "taquina",
+    "dias": [
+      {
+        "etiqueta": "2026-11-12",
+        "riesgo_principal": 28,
+        "saturacion_sar": 25,
+        "lluvia_mm": 11.8,
+        "lluvia_3d_mm": 17.7,
+        "twi_medio": 10.74,
+        "estado_titulo": "Monitoreo Rutinario · Condición Estable (2026-11-12)",
+        "estado_desc": "Niveles de saturación previa (25% SAR) y lluvia acumulada bajo umbral preventivo. Monitoreo satelital activo.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Sin Alerta en Cuencas · C. Taquiña (28 pts)",
+            "detalle": "Capacidad de almacenamiento dinámico S(t): 82.9 mm | Umbral crítico: 29.9 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.29,
+          "chutakawa": 0.29,
+          "pintumayu": 0.18,
+          "este": 0.41,
+          "tamborada": 0.19
+        },
+        "metadatos_evento": {
+          "id_evento": "en_vivo",
+          "municipio": "Cochabamba Metropolitana",
+          "cuenca_torrentera": "Red de Torrenteras Tunari",
+          "tipo_fenomeno": "Monitoreo en Tiempo Casi Real (SAR + GPM)",
+          "titular": "Monitoreo preventivo del GAMC en temporada de lluvias 2026",
+          "medio": "Alcaldía de Cochabamba / GAMC UGR",
+          "url": "https://recursosgamc.cochabamba.bo/"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.63,
+          "storage_s_mm": 82.9,
+          "bulking_factor_bf": 1.29,
+          "p_crit_1hr_mm": 29.9,
+          "p_event_mm": 11.8
+        }
+      },
+      {
+        "etiqueta": "2026-11-13",
+        "riesgo_principal": 85,
+        "saturacion_sar": 16,
+        "lluvia_mm": 37.6,
+        "lluvia_3d_mm": 14.7,
+        "twi_medio": 10.74,
+        "estado_titulo": "Monitoreo Rutinario · Condición Estable (2026-11-13)",
+        "estado_desc": "Niveles de saturación previa (16% SAR) y lluvia acumulada bajo umbral preventivo. Monitoreo satelital activo.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Sin Alerta en Cuencas · C. Llavini (85 pts)",
+            "detalle": "Capacidad de almacenamiento dinámico S(t): 26.9 mm | Umbral crítico: 21.5 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.35,
+          "chutakawa": 0.35,
+          "pintumayu": 0.91,
+          "este": 0.93,
+          "tamborada": 0.91
+        },
+        "metadatos_evento": {
+          "id_evento": "en_vivo",
+          "municipio": "Cochabamba Metropolitana",
+          "cuenca_torrentera": "Red de Torrenteras Tunari",
+          "tipo_fenomeno": "Monitoreo en Tiempo Casi Real (SAR + GPM)",
+          "titular": "Monitoreo preventivo del GAMC en temporada de lluvias 2026",
+          "medio": "Alcaldía de Cochabamba / GAMC UGR",
+          "url": "https://recursosgamc.cochabamba.bo/"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Llavini",
+          "w_ant": 0.561,
+          "storage_s_mm": 26.9,
+          "bulking_factor_bf": 1.15,
+          "p_crit_1hr_mm": 21.5,
+          "p_event_mm": 37.6
+        }
+      },
+      {
+        "etiqueta": "2026-11-14",
+        "riesgo_principal": 26,
+        "saturacion_sar": 28,
+        "lluvia_mm": 3.7,
+        "lluvia_3d_mm": 50.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "Monitoreo Rutinario · Condición Estable (2026-11-14)",
+        "estado_desc": "Niveles de saturación previa (28% SAR) y lluvia acumulada bajo umbral preventivo. Monitoreo satelital activo.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Sin Alerta en Cuencas · C. Taquiña (26 pts)",
+            "detalle": "Capacidad de almacenamiento dinámico S(t): 68.6 mm | Umbral crítico: 25.5 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.27,
+          "chutakawa": 0.27,
+          "pintumayu": 0.26,
+          "este": 0.41,
+          "tamborada": 0.29
+        },
+        "metadatos_evento": {
+          "id_evento": "en_vivo",
+          "municipio": "Cochabamba Metropolitana",
+          "cuenca_torrentera": "Red de Torrenteras Tunari",
+          "tipo_fenomeno": "Monitoreo en Tiempo Casi Real (SAR + GPM)",
+          "titular": "Monitoreo preventivo del GAMC en temporada de lluvias 2026",
+          "medio": "Alcaldía de Cochabamba / GAMC UGR",
+          "url": "https://recursosgamc.cochabamba.bo/"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.735,
+          "storage_s_mm": 68.6,
+          "bulking_factor_bf": 1.44,
+          "p_crit_1hr_mm": 25.5,
+          "p_event_mm": 3.7
+        }
+      },
+      {
+        "etiqueta": "2026-11-15",
+        "riesgo_principal": 26,
+        "saturacion_sar": 28,
+        "lluvia_mm": 4.6,
+        "lluvia_3d_mm": 44.9,
+        "twi_medio": 10.74,
+        "estado_titulo": "Monitoreo Rutinario · Condición Estable (2026-11-15)",
+        "estado_desc": "Niveles de saturación previa (28% SAR) y lluvia acumulada bajo umbral preventivo. Monitoreo satelital activo.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Sin Alerta en Cuencas · C. Taquiña (26 pts)",
+            "detalle": "Capacidad de almacenamiento dinámico S(t): 70.7 mm | Umbral crítico: 26.2 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.27,
+          "chutakawa": 0.27,
+          "pintumayu": 0.25,
+          "este": 0.39,
+          "tamborada": 0.29
+        },
+        "metadatos_evento": {
+          "id_evento": "en_vivo",
+          "municipio": "Cochabamba Metropolitana",
+          "cuenca_torrentera": "Red de Torrenteras Tunari",
+          "tipo_fenomeno": "Monitoreo en Tiempo Casi Real (SAR + GPM)",
+          "titular": "Monitoreo preventivo del GAMC en temporada de lluvias 2026",
+          "medio": "Alcaldía de Cochabamba / GAMC UGR",
+          "url": "https://recursosgamc.cochabamba.bo/"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.719,
+          "storage_s_mm": 70.7,
+          "bulking_factor_bf": 1.42,
+          "p_crit_1hr_mm": 26.2,
+          "p_event_mm": 4.6
+        }
+      },
+      {
+        "etiqueta": "2026-11-16",
+        "riesgo_principal": 22,
+        "saturacion_sar": 28,
+        "lluvia_mm": 0.0,
+        "lluvia_3d_mm": 40.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "Monitoreo Rutinario · Condición Estable (2026-11-16)",
+        "estado_desc": "Niveles de saturación previa (28% SAR) y lluvia acumulada bajo umbral preventivo. Monitoreo satelital activo.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Sin Alerta en Cuencas · C. Taquiña (22 pts)",
+            "detalle": "Capacidad de almacenamiento dinámico S(t): 73.9 mm | Umbral crítico: 27.1 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.23,
+          "chutakawa": 0.23,
+          "pintumayu": 0.21,
+          "este": 0.29,
+          "tamborada": 0.23
+        },
+        "metadatos_evento": {
+          "id_evento": "en_vivo",
+          "municipio": "Cochabamba Metropolitana",
+          "cuenca_torrentera": "Red de Torrenteras Tunari",
+          "tipo_fenomeno": "Monitoreo en Tiempo Casi Real (SAR + GPM)",
+          "titular": "Monitoreo preventivo del GAMC en temporada de lluvias 2026",
+          "medio": "Alcaldía de Cochabamba / GAMC UGR",
+          "url": "https://recursosgamc.cochabamba.bo/"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.695,
+          "storage_s_mm": 73.9,
+          "bulking_factor_bf": 1.38,
+          "p_crit_1hr_mm": 27.1,
+          "p_event_mm": 0.0
+        }
+      },
+      {
+        "etiqueta": "2026-11-17",
+        "riesgo_principal": 20,
+        "saturacion_sar": 28,
+        "lluvia_mm": 0.0,
+        "lluvia_3d_mm": 2.9,
+        "twi_medio": 10.74,
+        "estado_titulo": "Monitoreo Rutinario · Condición Estable (2026-11-17)",
+        "estado_desc": "Niveles de saturación previa (28% SAR) y lluvia acumulada bajo umbral preventivo. Monitoreo satelital activo.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Sin Alerta en Cuencas · C. Taquiña (20 pts)",
+            "detalle": "Capacidad de almacenamiento dinámico S(t): 82.5 mm | Umbral crítico: 29.7 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.21,
+          "chutakawa": 0.21,
+          "pintumayu": 0.18,
+          "este": 0.28,
+          "tamborada": 0.19
+        },
+        "metadatos_evento": {
+          "id_evento": "en_vivo",
+          "municipio": "Cochabamba Metropolitana",
+          "cuenca_torrentera": "Red de Torrenteras Tunari",
+          "tipo_fenomeno": "Monitoreo en Tiempo Casi Real (SAR + GPM)",
+          "titular": "Monitoreo preventivo del GAMC en temporada de lluvias 2026",
+          "medio": "Alcaldía de Cochabamba / GAMC UGR",
+          "url": "https://recursosgamc.cochabamba.bo/"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.633,
+          "storage_s_mm": 82.5,
+          "bulking_factor_bf": 1.29,
+          "p_crit_1hr_mm": 29.7,
+          "p_event_mm": 0.0
+        }
+      },
+      {
+        "etiqueta": "2026-11-18",
+        "riesgo_principal": 18,
+        "saturacion_sar": 28,
+        "lluvia_mm": 0.0,
+        "lluvia_3d_mm": 1.5,
+        "twi_medio": 10.74,
+        "estado_titulo": "Monitoreo Rutinario · Condición Estable (2026-11-18)",
+        "estado_desc": "Niveles de saturación previa (28% SAR) y lluvia acumulada bajo umbral preventivo. Monitoreo satelital activo.",
+        "alertas_emitidas": [
+          {
+            "nivel": "ok",
+            "zona": "taquina",
+            "titulo": "Sin Alerta en Cuencas · C. Taquiña (18 pts)",
+            "detalle": "Capacidad de almacenamiento dinámico S(t): 90.0 mm | Umbral crítico: 32.0 mm/h."
+          }
+        ],
+        "intensidades": {
+          "taquina": 0.19,
+          "chutakawa": 0.19,
+          "pintumayu": 0.16,
+          "este": 0.25,
+          "tamborada": 0.19
+        },
+        "metadatos_evento": {
+          "id_evento": "en_vivo",
+          "municipio": "Cochabamba Metropolitana",
+          "cuenca_torrentera": "Red de Torrenteras Tunari",
+          "tipo_fenomeno": "Monitoreo en Tiempo Casi Real (SAR + GPM)",
+          "titular": "Monitoreo preventivo del GAMC en temporada de lluvias 2026",
+          "medio": "Alcaldía de Cochabamba / GAMC UGR",
+          "url": "https://recursosgamc.cochabamba.bo/"
+        },
+        "parametros_fisicos": {
+          "cuenca_focal": "C. Taquiña",
+          "w_ant": 0.581,
+          "storage_s_mm": 90.0,
+          "bulking_factor_bf": 1.23,
+          "p_crit_1hr_mm": 32.0,
+          "p_event_mm": 0.0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+# Pixi environment
+.pixi/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Raw large binary datasets (reproducible via ingestion scripts)
+data/raw/fabdem/*.tif
+data/raw/sar/*.tif
+data/raw/gamc_kml/*.kml
+data/raw/*.rar
+data/raw/*.zip
+data/processed/rasters/*.tif
+data/processed/gamc/poblacion_manzanas.geojson
+data/processed/gamc/areas_verdes.geojson
+data/processed/gamc/areas_equipamiento.geojson
+
+# OS / temporary files
+.DS_Store
+*.log

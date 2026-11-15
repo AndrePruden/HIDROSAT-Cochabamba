@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hidrosat Cochabamba | Sistema de Alerta Temprana en Cuencas</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO COMPACTO Y CRONOLOGÍA OPERATIVA -->
+  <header class="app-header">
+    <div class="brand-block">
+      <div class="logo-mark">HC</div>
+      <div>
+        <h1>HIDROSAT · COCHABAMBA</h1>
+        <span>Alerta Temprana Físico-Multicriterio en Cuencas (SAR + GPM + GAMC)</span>
+      </div>
+    </div>
+
+    <!-- Selector de Modo y Barra Temporal -->
+    <div class="timeline-control-wrapper">
+      <div class="mode-selector-block">
+        <label for="selector-escenario" class="mode-label">Modo / Escenario:</label>
+        <select id="selector-escenario" class="scenario-select">
+          <optgroup label="🔴 Simulaciones de Desastres (Día a Día)">
+            <option value="taquina_2020" selected>Taquiña 2020 (17 a 22 Feb) · Aluvión Tiquipaya</option>
+            <option value="taquina_2018">Taquiña 2018 (03 a 08 Feb) · Aluvión Histórico</option>
+            <option value="sacaba_2024">Sacaba 2024 (22 a 27 Feb) · Mazamorra Ch'aki Mayu</option>
+            <option value="pintumayu_2021">Pintumayu 2021 (22 a 27 Nov) · Desborde Norte</option>
+            <option value="colcapirhua_2025">Colcapirhua 2025 (17 a 22 Ene) · Duralit</option>
+          </optgroup>
+          <optgroup label="📡 Monitoreo en Tiempo Casi Real">
+            <option value="en_vivo">🔴 En Vivo: Hoy y Pronóstico (Noviembre 2026)</option>
+          </optgroup>
+          <optgroup label="📅 Consulta por Fecha Libre">
+            <option value="custom">Elegir Fecha en Calendario...</option>
+          </optgroup>
+        </select>
+
+        <div id="box-date-picker" class="custom-date-box hidden">
+          <input type="date" id="input-custom-date" value="2020-02-21" min="2018-01-01" max="2026-11-20" />
+          <button id="btn-evaluar-fecha" class="btn-eval-date">🔍 Evaluar</button>
+        </div>
+      </div>
+
+      <!-- Barra Temporal Central (Día tras día) -->
+      <div class="timeline-bar">
+        <button id="btn-prev-day" class="nav-arrow" title="Día anterior">◀</button>
+        <div id="date-pills" class="date-pills"></div>
+        <button id="btn-next-day" class="nav-arrow" title="Día siguiente">▶</button>
+        <button id="btn-auto-play" class="btn-play-sim">▶ Simular Secuencia</button>
+      </div>
+    </div>
+
+    <div class="header-tools">
+      <span id="modelo-estado" class="chip-estado">✓ Modelo Físico NASA Activo (18 Eventos)</span>
+      <label class="btn-upload" for="json-loader">
+        Importar Modelo (.json)
+        <input type="file" id="json-loader" accept=".json" hidden />
+      </label>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL: DOBLE MAPA + PANEL DE DECISIONES -->
+  <main class="command-layout">
+
+    <!-- ZONA DE DOBLE MAPA (IZQUIERDA: REGIONAL | DERECHA: LENTE DE CALOR SAR) -->
+    <section class="dual-map-stage">
+      
+      <!-- MAPA 1: CONTEXTO REGIONAL, CUENCAS Y DRENAJES -->
+      <div class="map-card">
+        <div class="map-card-header">
+          <div>
+            <strong>1. Contexto Regional: Cuencas UH 8 y Red de Drenaje</strong>
+            <small>Trayectoria gravitacional desde cordillera del Tunari hacia valle central y sur</small>
+          </div>
+          <div class="layer-toggles">
+            <label><input type="checkbox" id="tog-cuencas" checked /> Cuencas UH8</label>
+            <label><input type="checkbox" id="tog-drenajes" checked /> Drenajes</label>
+            <label><input type="checkbox" id="tog-distritos" /> Distritos</label>
+          </div>
+        </div>
+        <div id="map-regional" class="leaflet-box"></div>
+      </div>
+
+      <!-- MAPA 2: LENTE DE DIAGNÓSTICO DE CALOR EN CUENCA CRÍTICA -->
+      <div class="map-card">
+        <div class="map-card-header">
+          <div>
+            <strong>2. Lente de Saturación y Calor en Cuenca Crítica</strong>
+            <small id="subtitulo-lente">Foco activo: Cuenca Taquiña – Tiquipaya (Cabecera y Abanico)</small>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <div class="layer-toggles">
+              <label><input type="checkbox" id="tog-focal-drenajes" checked /> Drenajes</label>
+              <label><input type="checkbox" id="tog-focal-limites" checked /> Límites</label>
+            </div>
+            <select id="selector-cuenca-foco" class="cuenca-select">
+              <option value="taquina">Cuenca Taquiña (Tiquipaya)</option>
+              <option value="chutakawa">Cuenca Chutakawa / Khora</option>
+              <option value="pintumayu">Torrentera Pintumayu (Norte)</option>
+              <option value="este">Torrentera Ch'aki Mayu / Sacaba (Este)</option>
+              <option value="tamborada">Subcuenca Tamborada / Colcapirhua (Sur)</option>
+            </select>
+          </div>
+        </div>
+        <div id="map-focal" class="leaflet-box"></div>
+
+        <!-- Barra inferior del lente focal: Opacidad y Leyenda -->
+        <div class="focal-footer">
+          <div class="opacity-control">
+            <span>Intensidad Capa Térmica:</span>
+            <input type="range" id="range-heat" min="20" max="100" value="85" />
+            <strong id="lbl-heat-op">85%</strong>
+          </div>
+          <div class="scale-bar">
+            <span>Estable</span>
+            <div class="gradient-strip"></div>
+            <span>Saturación Crítica</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PANEL LATERAL DERECHO: DIAGNÓSTICO FÍSICO Y BANDEJA DE ALERTAS UGR -->
+    <aside class="decision-sidebar">
+      
+      <!-- Tarjeta Principal de Estado del Día -->
+      <div id="alerta-principal" class="status-banner status-normal">
+        <div class="status-top">
+          <span id="badge-estado" class="status-tag">CONDICIÓN ESTABLE</span>
+          <span id="fecha-activa-lbl" class="mono-date">--</span>
+        </div>
+        <h2 id="titulo-estado">Sin riesgo de desborde en cuenca</h2>
+        <p id="desc-estado">Los niveles de saturación previa del subsuelo y precipitación acumulada se mantienen bajo el umbral físico de alerta.</p>
+        <!-- Ground-Truth Verificación Municipal -->
+        <div id="ground-truth-box" class="ground-truth-box hidden">
+          <div class="gt-header">
+            <span class="gt-icon">📰</span>
+            <strong>Verificación Ground-Truth (GAMC / Noticia Confirmada):</strong>
+          </div>
+          <div id="gt-titular" class="gt-text">--</div>
+          <div class="gt-footer">
+            <span id="gt-medio" class="gt-source">Fuente</span>
+            <a id="gt-enlace" href="#" target="_blank" rel="noopener" class="gt-link">Constatación Noticiosa ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Métricas Físicas del Modelo (4 indicadores limpios) -->
+      <div class="metrics-block">
+        <div class="block-title">PARÁMETROS FÍSICOS EVALUADOS</div>
+        <div class="metrics-2x2">
+          <div class="metric-item">
+            <span class="m-label">Índice Riesgo Cuenca</span>
+            <strong id="m-taquina" class="m-value">--</strong>
+            <span class="m-sub">Umbral alerta: 65 pts</span>
+          </div>
+          <div class="metric-item">
+            <span class="m-label">Saturación Previa SAR</span>
+            <strong id="m-sar" class="m-value">--</strong>
+            <span class="m-sub">Humedad subsuperficial</span>
+          </div>
+          <div class="metric-item">
+            <span class="m-label">Lluvia Acumulada (3d)</span>
+            <strong id="m-lluvia" class="m-value">--</strong>
+            <span class="m-sub">GPM / Estación local</span>
+          </div>
+          <div class="metric-item">
+            <span class="m-label">Umbral P_crit (1h)</span>
+            <strong id="m-twi" class="m-value">--</strong>
+            <span class="m-sub" id="sub-m-pcrit">Lluvia crítica de desborde</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bitácora de Alertas Emitidas por el Modelo -->
+      <div class="alerts-feed-block">
+        <div class="block-title">ALERTAS EMITIDAS POR EL MODELO</div>
+        <div id="lista-alertas" class="alerts-list">
+          <!-- Se llena automáticamente según los cálculos del día -->
+        </div>
+      </div>
+
+      <!-- Acción Institucional (Notificación por Correo al Encargado UGR) -->
+      <div class="action-footer">
+        <button id="btn-notificar-email" class="btn-email-alert" disabled>
+          ✉️ Generar Boletín de Alerta por Correo (UGR)
+        </button>
+        <small id="helper-email">Se habilita automáticamente cuando una cuenca supera el umbral preventivo.</small>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- MODAL DE VISTA PREVIA DEL CORREO DE ALERTA INSTITUCIONAL -->
+  <div id="modal-email" class="modal-backdrop hidden">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3>Boletín Automático de Alerta Temprana · UGR GAMC</h3>
+        <button id="btn-cerrar-modal" class="close-x">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="email-meta">
+          <div><strong>Para:</strong> encargado.ugr@cochabamba.bo; subalcaldias.norte.sur@cochabamba.bo</div>
+          <div><strong>Asunto:</strong> <span id="email-asunto">ALERTA PREVENTIVA DE CUENCA</span></div>
+        </div>
+        <textarea id="email-cuerpo" rows="9" readonly></textarea>
+      </div>
+      <div class="modal-foot">
+        <button id="btn-copiar-correo" class="btn-primary-action">Copiar Boletín para Envío</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+{
+  "total_manzanas_evaluated": 14145,
+  "total_population_evaluated": 725420,
+  "non_obvious_off_channel_discoveries": {
+    "total_off_channel_exposed_manzanas": 693,
+    "total_off_channel_exposed_population": 61833,
+    "total_off_channel_exposed_dwellings": 24008,
+    "by_mechanism": {
+      "NON_OBVIOUS_AVULSION_PALEOCHANNEL": {
+        "manzanas": 437,
+        "population": 38118,
+        "mean_dist_from_mapped_river_m": 397.9
+      },
+      "NON_OBVIOUS_ENDORHEIC_PLUVIAL_SINK": {
+        "manzanas": 240,
+        "population": 22063,
+        "mean_dist_from_mapped_river_m": 844.8
+      },
+      "COMPOUND_AVULSION_TO_SINK_TRAP": {
+        "manzanas": 16,
+        "population": 1652,
+        "mean_dist_from_mapped_river_m": 1411.6
+      }
+    },
+    "schools_in_off_channel_hazard_zones": 32,
+    "health_centers_in_off_channel_hazard_zones": 12
+  },
+  "excluded_tautological_channel_buffer": {
+    "buffer_distance_m": 120.0,
+    "manzanas_near_channel_excluded": 5155,
+    "population_near_channel_excluded": 191307
+  },
+  "district_ranking": [
+    {
+      "distrito": "D10",
+      "total_manzanas": 310,
+      "total_population": 31454,
+      "novel_off_channel_exposed_manzanas": 154,
+      "novel_off_channel_exposed_population": 16554,
+      "novel_off_channel_exposed_dwellings": 7435,
+      "avulsion_paleochannel_population": 11330,
+      "endorheic_sink_population": 3572,
+      "compound_trap_population": 1652,
+      "tautological_channel_buffer_population_excluded": 435
+    },
+    {
+      "distrito": "D3",
+      "total_manzanas": 696,
+      "total_population": 68169,
+      "novel_off_channel_exposed_manzanas": 100,
+      "novel_off_channel_exposed_population": 10608,
+      "novel_off_channel_exposed_dwellings": 3581,
+      "avulsion_paleochannel_population": 10544,
+      "endorheic_sink_population": 64,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 19837
+    },
+    {
+      "distrito": "D9",
+      "total_manzanas": 4510,
+      "total_population": 140965,
+      "novel_off_channel_exposed_manzanas": 145,
+      "novel_off_channel_exposed_population": 8710,
+      "novel_off_channel_exposed_dwellings": 2999,
+      "avulsion_paleochannel_population": 6852,
+      "endorheic_sink_population": 1858,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 48990
+    },
+    {
+      "distrito": "D11",
+      "total_manzanas": 213,
+      "total_population": 23790,
+      "novel_off_channel_exposed_manzanas": 47,
+      "novel_off_channel_exposed_population": 6504,
+      "novel_off_channel_exposed_dwellings": 3230,
+      "avulsion_paleochannel_population": 2772,
+      "endorheic_sink_population": 3732,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 1410
+    },
+    {
+      "distrito": "D4",
+      "total_manzanas": 525,
+      "total_population": 47438,
+      "novel_off_channel_exposed_manzanas": 67,
+      "novel_off_channel_exposed_population": 6310,
+      "novel_off_channel_exposed_dwellings": 2018,
+      "avulsion_paleochannel_population": 274,
+      "endorheic_sink_population": 6036,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 9757
+    },
+    {
+      "distrito": "D2",
+      "total_manzanas": 869,
+      "total_population": 67121,
+      "novel_off_channel_exposed_manzanas": 65,
+      "novel_off_channel_exposed_population": 4013,
+      "novel_off_channel_exposed_dwellings": 1278,
+      "avulsion_paleochannel_population": 4013,
+      "endorheic_sink_population": 0,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 13478
+    },
+    {
+      "distrito": "D6",
+      "total_manzanas": 485,
+      "total_population": 37690,
+      "novel_off_channel_exposed_manzanas": 38,
+      "novel_off_channel_exposed_population": 3045,
+      "novel_off_channel_exposed_dwellings": 1305,
+      "avulsion_paleochannel_population": 70,
+      "endorheic_sink_population": 2975,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 0
+    },
+    {
+      "distrito": "D5",
+      "total_manzanas": 547,
+      "total_population": 47359,
+      "novel_off_channel_exposed_manzanas": 30,
+      "novel_off_channel_exposed_population": 2782,
+      "novel_off_channel_exposed_dwellings": 844,
+      "avulsion_paleochannel_population": 0,
+      "endorheic_sink_population": 2782,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 1408
+    },
+    {
+      "distrito": "D12",
+      "total_manzanas": 490,
+      "total_population": 53156,
+      "novel_off_channel_exposed_manzanas": 17,
+      "novel_off_channel_exposed_population": 1928,
+      "novel_off_channel_exposed_dwellings": 829,
+      "avulsion_paleochannel_population": 1406,
+      "endorheic_sink_population": 522,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 12891
+    },
+    {
+      "distrito": "D13",
+      "total_manzanas": 370,
+      "total_population": 15406,
+      "novel_off_channel_exposed_manzanas": 16,
+      "novel_off_channel_exposed_population": 857,
+      "novel_off_channel_exposed_dwellings": 304,
+      "avulsion_paleochannel_population": 857,
+      "endorheic_sink_population": 0,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 4653
+    },
+    {
+      "distrito": "D7",
+      "total_manzanas": 313,
+      "total_population": 17371,
+      "novel_off_channel_exposed_manzanas": 14,
+      "novel_off_channel_exposed_population": 522,
+      "novel_off_channel_exposed_dwellings": 185,
+      "avulsion_paleochannel_population": 0,
+      "endorheic_sink_population": 522,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 1888
+    },
+    {
+      "distrito": "D1",
+      "total_manzanas": 591,
+      "total_population": 32343,
+      "novel_off_channel_exposed_manzanas": 0,
+      "novel_off_channel_exposed_population": 0,
+      "novel_off_channel_exposed_dwellings": 0,
+      "avulsion_paleochannel_population": 0,
+      "endorheic_sink_population": 0,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 13841
+    },
+    {
+      "distrito": "D14",
+      "total_manzanas": 767,
+      "total_population": 30329,
+      "novel_off_channel_exposed_manzanas": 0,
+      "novel_off_channel_exposed_population": 0,
+      "novel_off_channel_exposed_dwellings": 0,
+      "avulsion_paleochannel_population": 0,
+      "endorheic_sink_population": 0,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 14728
+    },
+    {
+      "distrito": "D15",
+      "total_manzanas": 1403,
+      "total_population": 40871,
+      "novel_off_channel_exposed_manzanas": 0,
+      "novel_off_channel_exposed_population": 0,
+      "novel_off_channel_exposed_dwellings": 0,
+      "avulsion_paleochannel_population": 0,
+      "endorheic_sink_population": 0,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 18242
+    },
+    {
+      "distrito": "D8",
+      "total_manzanas": 2056,
+      "total_population": 71958,
+      "novel_off_channel_exposed_manzanas": 0,
+      "novel_off_channel_exposed_population": 0,
+      "novel_off_channel_exposed_dwellings": 0,
+      "avulsion_paleochannel_population": 0,
+      "endorheic_sink_population": 0,
+      "compound_trap_population": 0,
+      "tautological_channel_buffer_population_excluded": 29749
+    }
+  ]
+}

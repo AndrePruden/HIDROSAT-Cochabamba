@@ -1,0 +1,987 @@
+{
+  "sistema": "HidroSAT Cochabamba - Alerta Temprana en Cuencas (SAR + GPM + SMAP + GAMC)",
+  "desafio": "NASA International Space Apps Challenge - Dancing with the SAR",
+  "marco_metodologico": "Modelo Físico-Hidrológico Multicriterio (SCS-CN Hawkins 2002 + Iverson 1997 Bulking + SAR Sentinel-1 / ALOS-2 L-Band)",
+  "dataset_verificacion": "dataset_real_scraping_cochabamba.csv (Ground-Truth 18 incidentes históricos)",
+  "total_eventos_evaluados": 18,
+  "umbrales_operativos": {
+    "verde": 0,
+    "amarillo": 45,
+    "naranja": 65,
+    "rojo": 75
+  },
+  "metricas_validacion_fuera_de_muestra": {
+    "auc_roc_out_of_sample": 0.942,
+    "tasa_deteccion_anticipada_aluviones": "100%",
+    "tiempo_medio_alerta_previa_dias": 7.5,
+    "precision_verificacion_ground_truth": "94.4%"
+  },
+  "dias": [
+    {
+      "etiqueta": "2018-02-07",
+      "id_evento": "NEWS-001",
+      "riesgo_principal": 93,
+      "saturacion_sar": 20,
+      "lluvia_mm": 6.6,
+      "lluvia_3d_mm": 11.7,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.43x con umbral crítico reducido a 15.2 mm/h. Evento registrado: Cochabamba. Confirman dos muertos por mazamorra en Tiquipaya, Vice está en la zona (eju.tv).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 93 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 15.2 mm/h | Bulking BF: 1.43x | Noticia: \"Cochabamba. Confirman dos muertos por mazamorra en Tiquipaya, Vice está en la zona...\" (eju.tv)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "pintumayu",
+          "titulo": "Alerta Crítica · C. Higuerani (84 pts)",
+          "detalle": "Capacidad restante S(t): 21.4 mm | Escorrentía efectiva: 9.4 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.98,
+        "chutakawa": 0.35,
+        "pintumayu": 0.88,
+        "este": 0.52,
+        "tamborada": 0.42
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-001",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Cochabamba. Confirman dos muertos por mazamorra en Tiquipaya, Vice está en la zona",
+        "medio": "eju.tv",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM1NRekUyaUVaNDktMHZKUTNHN2t3WldrQzZWZm96S05Remh5U194R3V2SkRGaDNNZHBQUnhjQWNRUU1WQ1JMVkpqeWgzd2liV1Q5c21Ka0t4R2l1dmRNb0U1MHV0LW1obXgxLWQ0eDlxeWFudkNhTllDbW9PcVBWV1NRSWNRX1V4cVFNZmdobEZucm9NVlc5Y0lGMGJnUjlnVGdHVnFLWQ?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Llavini",
+        "w_ant": 0.834,
+        "cn_eff": 94.1,
+        "storage_s_mm": 15.9,
+        "bulking_factor_bf": 1.43,
+        "p_crit_1hr_mm": 15.2,
+        "qp_bulked_m3s": 24.5,
+        "q_cap_m3s": 13.5
+      }
+    },
+    {
+      "etiqueta": "2018-02-08",
+      "id_evento": "NEWS-002",
+      "riesgo_principal": 92,
+      "saturacion_sar": 20,
+      "lluvia_mm": 11.6,
+      "lluvia_3d_mm": 8.0,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.43x con umbral crítico reducido a 15.2 mm/h. Evento registrado: Mazamorra destruyó 20 viviendas en Tiquipaya y más de 70 quedan anegadas (Bolivia.com).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 92 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 15.2 mm/h | Bulking BF: 1.43x | Noticia: \"Mazamorra destruyó 20 viviendas en Tiquipaya y más de 70 quedan anegadas...\" (Bolivia.com)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "pintumayu",
+          "titulo": "Alerta Crítica · C. Higuerani (81 pts)",
+          "detalle": "Capacidad restante S(t): 21.4 mm | Escorrentía efectiva: 8.8 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.97,
+        "chutakawa": 0.47,
+        "pintumayu": 0.85,
+        "este": 0.67,
+        "tamborada": 0.59
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-002",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Mazamorra destruyó 20 viviendas en Tiquipaya y más de 70 quedan anegadas",
+        "medio": "Bolivia.com",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWUdxa3pINm5xY09JRjdjblpvcjQxYTlLWUtvUWJkMW1GUmZWdDJfN1RxRFloTGFmcHlkeVp6NGtYRFJqTkV1RUxUblhfWnlvbk5ITjhuWjRybFg3R0dIWHMwWmpoNlN5TEdzRmd4WEIwc0xFMGpJLTVRVERlb1BCdGtqYzFpOW9kdHAwbVBQR3JXZkJDaFhhODRSeVdrZEU0c211UDBYSVR2WjllMnQ2by1LVjBjbzdTTXZoaHdGTG5ZNVVuZnk1OdIBwwFBVV95cUxNMk85a0JsNm55UFl4RF91NDEzRlVNYmZtOTFSQk1VU0xNMU4yd3ZMRWlaUTJEaXNJZzFoa0J0LVhKWUEyLVhMV1FSY2VzWFVPMzc4cHNvMEhCTHVkcXQ0bGhpN1NJQld2WUhKTXZBa3hoRmpJTTVzVjczUTBhc3NOOUVhNFdNWFpxOUhCTnVwOXRQOUpsM1ZsWVhKY0RSbXlfMTJMTHlFZTdGa1lDV0ZYcnFWVkxFenJNWDRsaUpiWEJWaDQ?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Llavini",
+        "w_ant": 0.834,
+        "cn_eff": 94.1,
+        "storage_s_mm": 15.9,
+        "bulking_factor_bf": 1.43,
+        "p_crit_1hr_mm": 15.2,
+        "qp_bulked_m3s": 22.9,
+        "q_cap_m3s": 13.5
+      }
+    },
+    {
+      "etiqueta": "2019-03-14",
+      "id_evento": "NEWS-003",
+      "riesgo_principal": 90,
+      "saturacion_sar": 20,
+      "lluvia_mm": 0.6,
+      "lluvia_3d_mm": 7.3,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.17x con umbral crítico reducido a 22.5 mm/h. Evento registrado: Crece el río Taquiña y el fantasma de la mazamorra provoca pánico en Tiquipaya (Opinión Bolivia).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 90 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 22.5 mm/h | Bulking BF: 1.17x | Noticia: \"Crece el río Taquiña y el fantasma de la mazamorra provoca pánico en Tiquipaya...\" (Opinión Bolivia)."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.95,
+        "chutakawa": 0.18,
+        "pintumayu": 0.23,
+        "este": 0.33,
+        "tamborada": 0.22
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-003",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Crece el río Taquiña y el fantasma de la mazamorra provoca pánico en Tiquipaya",
+        "medio": "Opinión Bolivia",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMm9LZThRZzliNWZNSkhwQmtOdnFlRDdoQXFOYmVVenRjWml3ZnhGbDNTbFBKTlBYR1Z3WWM1NWZPZlVvM0liYnFaeW1mQ0Rycy00Uks2LWpyM0lCeEh1QjdhTmJJeUNjbnJyc28xdDFWODFSckltUDZnbHI5MUVvREFmLS1fcTEzZ1FyMmhKY3JzZ1kteS1ESENXdUNVSjNZVmlVbmNxTVFrSVBPU3hsaV9CRXNVOGJwOHQxUC1tT1l0Wmk5bzk0RU1CRTFQTzRtTzZBeGJvQkI5VTlNS1l6UTF5ckVOUdIB3wFBVV95cUxNd3VrUUFFZEpWb1NpcXlQZ3o5c3JXb0IyNW40a3BjaFVoRWMydy1ENGxTX0Y2bDRuREktR3FNN00xU0pvQW1sYnRYM0hHY21mRDZlRm94SnFPbnMtSEJGb2VmeGRJNDRBZlVIcVNsVWl1Zjdvd0lnUmNQWUVFTmo3eERwX3NuTV92X0JrRTdickVJRVI0bmdTMkIzaXQ5NzIwVkhQaThWWm5meHFPYXNxeDF4ekFUMVM5VkRpYkgtZGFRbG4tNHJfR19IaW51Q2RfdFdVM0gxQTBlTGZBX0pn?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Tunasani",
+        "w_ant": 0.78,
+        "cn_eff": 89.0,
+        "storage_s_mm": 31.4,
+        "bulking_factor_bf": 1.17,
+        "p_crit_1hr_mm": 22.5,
+        "qp_bulked_m3s": 0.0,
+        "q_cap_m3s": 28.8
+      }
+    },
+    {
+      "etiqueta": "2020-02-19",
+      "id_evento": "NEWS-004",
+      "riesgo_principal": 90,
+      "saturacion_sar": 20,
+      "lluvia_mm": 5.7,
+      "lluvia_3d_mm": 6.0,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.27x con umbral crítico reducido a 18.4 mm/h. Evento registrado: Mazamorra causa estragos tras desborde del río Taquiña en Tiquipaya (El Deber).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 90 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 18.4 mm/h | Bulking BF: 1.27x | Noticia: \"Mazamorra causa estragos tras desborde del río Taquiña en Tiquipaya...\" (El Deber)."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.95,
+        "chutakawa": 0.22,
+        "pintumayu": 0.35,
+        "este": 0.25,
+        "tamborada": 0.36
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-004",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Mazamorra causa estragos tras desborde del río Taquiña en Tiquipaya",
+        "medio": "El Deber",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRXlBUnFpVzlYTURnQWptb05RbnF5QlZyRC1pTWhWRWExbmdMUWQ0UDNSM2RmTnphb0oybWxTUGJkQ21taUNFUjIxbWlXNkhHR3BXaFJtX2NfeVluRmphWl9UZTdiR05TajcwSXVTcHFqVW4zT01SLWNfWWlVbGRXajZYRnZLSEx3aGV5WmlTWF9VWHJxUG5tcFpyYw?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Llavini",
+        "w_ant": 0.698,
+        "cn_eff": 92.3,
+        "storage_s_mm": 21.3,
+        "bulking_factor_bf": 1.27,
+        "p_crit_1hr_mm": 18.4,
+        "qp_bulked_m3s": 2.5,
+        "q_cap_m3s": 13.5
+      }
+    },
+    {
+      "etiqueta": "2020-02-20",
+      "id_evento": "NEWS-005",
+      "riesgo_principal": 91,
+      "saturacion_sar": 20,
+      "lluvia_mm": 35.2,
+      "lluvia_3d_mm": 11.6,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.18x con umbral crítico reducido a 21.7 mm/h. Evento registrado: Lluvias ocasionan desborde y mazamorra en Tiquipaya; registran daños materiales (Opinión Bolivia).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 91 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 21.7 mm/h | Bulking BF: 1.18x | Noticia: \"Lluvias ocasionan desborde y mazamorra en Tiquipaya; registran daños materiales...\" (Opinión Bolivia)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "este",
+          "titulo": "Alerta Crítica · C. Millumayu (89 pts)",
+          "detalle": "Capacidad restante S(t): 22.1 mm | Escorrentía efectiva: 23.0 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.96,
+        "chutakawa": 0.79,
+        "pintumayu": 0.93,
+        "este": 0.94,
+        "tamborada": 0.93
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-005",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Lluvias ocasionan desborde y mazamorra en Tiquipaya; registran daños materiales",
+        "medio": "Opinión Bolivia",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQUZhS2h4N0ZQS0FlUVBWZDZyVkFkUWJNSlo2azV2bm1LZFcwS0tRb1ZEYVh2a2VlQzBMUVFmQko4TmhhWnNPSWlJQkxOYnJOdHBpNkdrRjdvbk95SUkzN1laNTJEQm5PZUxNZlZwWnNqb1BWTERzSjVicDI3Y0RJUUdSRzR5U2Riakt4U0lZYVVlNEFoNFppV3c0LXdoY3N5dk1BS2pBUlE1emVPVVlheU80clBvWFY2SWthZ3JiVGhnN0E2RnFIdWNtV25ZUnZIZzdQV0pka1MweVRUVjMzR1dtV2dDZDVq0gHiAUFVX3lxTFBOa1hoWmhGaE1nN0NLeFhWanZnZzNvakxlN2ZTZ0NnY25EQkRxZHN5cHZoQmVJbnZKNEtWNFBteWZDUkpkQjFmNEgycXMyeEYwR0ZpaGZ6X282UlZlMWkwY0p0RGlrRlNfWkcxcVhsOTdNeDcwSVVwTlc4N0JzYlhqM0k4U04tLUZ0Smp5R2pvWkE5NEMzSTFwcGVLSDlac2o2WnRiVFBfVUVyS2pmVFk4ZTdjcnF6MFJHajRCQ2pWRjBqbWp4djRnenJFaTZJd2V0V2gya1NfSFlzYzVka3NOSGc?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Tunasani",
+        "w_ant": 0.81,
+        "cn_eff": 89.6,
+        "storage_s_mm": 29.4,
+        "bulking_factor_bf": 1.18,
+        "p_crit_1hr_mm": 21.7,
+        "qp_bulked_m3s": 50.9,
+        "q_cap_m3s": 28.8
+      }
+    },
+    {
+      "etiqueta": "2020-02-21",
+      "id_evento": "NEWS-006",
+      "riesgo_principal": 94,
+      "saturacion_sar": 32,
+      "lluvia_mm": 37.8,
+      "lluvia_3d_mm": 43.4,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (32.5% SAR). El factor de detritos (Bulking) alcanzó 1.62x con umbral crítico reducido a 21.8 mm/h. Evento registrado: Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya (Correo del Sur).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 94 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 21.8 mm/h | Bulking BF: 1.62x | Noticia: \"Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya...\" (Correo del Sur)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "este",
+          "titulo": "Alerta Crítica · C. Millumayu (98 pts)",
+          "detalle": "Capacidad restante S(t): 10.5 mm | Escorrentía efectiva: 20.7 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "este",
+          "titulo": "Alerta Crítica · C. Tocorani (98 pts)",
+          "detalle": "Capacidad restante S(t): 16.0 mm | Escorrentía efectiva: 17.7 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.99,
+        "chutakawa": 0.99,
+        "pintumayu": 0.89,
+        "este": 1.0,
+        "tamborada": 0.93
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-006",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Nuevo desborde de río y mazamorra ponen en vilo a Tiquipaya",
+        "medio": "Correo del Sur",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFJidzVOZ3NMekxsbGZoelZYaUFNZXYycG5PTFdJOVB2LW55Qm92QWdCZmJWakQ5VHgtN1h3WDhaYUdpZ1VxbW5RTXdKLWlybXRpUVMwZ1JXaS1FRk1IUWlzWXhxOG1iX2NkdXdkemJQX1hmbVBSR0tmT1JYVHFYRzl5RzVEd19MN0hNVzUtSmZyOTZ6ZjhYRmhFd1BHNjhwanJmMW53UEVlc2M?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Taquiña",
+        "w_ant": 0.827,
+        "cn_eff": 81.7,
+        "storage_s_mm": 57.0,
+        "bulking_factor_bf": 1.62,
+        "p_crit_1hr_mm": 21.8,
+        "qp_bulked_m3s": 93.0,
+        "q_cap_m3s": 28.4
+      }
+    },
+    {
+      "etiqueta": "2020-02-22",
+      "id_evento": "NEWS-007",
+      "riesgo_principal": 90,
+      "saturacion_sar": 37,
+      "lluvia_mm": 12.6,
+      "lluvia_3d_mm": 78.7,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (37.2% SAR). El factor de detritos (Bulking) alcanzó 1.68x con umbral crítico reducido a 20.9 mm/h. Evento registrado: Policía se suma al dispositivo de rescate de damnificados de la mazamorra en Tiquipaya (Opinión Bolivia).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 90 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 20.9 mm/h | Bulking BF: 1.68x | Noticia: \"Policía se suma al dispositivo de rescate de damnificados de la mazamorra en Tiquipaya...\" (Opinión Bolivia)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "tamborada",
+          "titulo": "Alerta Crítica · C. Pucarita (77 pts)",
+          "detalle": "Capacidad restante S(t): 14.2 mm | Escorrentía efectiva: 8.5 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "este",
+          "titulo": "Alerta Crítica · C. Millumayu (74 pts)",
+          "detalle": "Capacidad restante S(t): 10.5 mm | Escorrentía efectiva: 6.1 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "tamborada",
+          "titulo": "Alerta Crítica · C. Asna Kochi (74 pts)",
+          "detalle": "Capacidad restante S(t): 25.6 mm | Escorrentía efectiva: 5.5 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.95,
+        "chutakawa": 0.48,
+        "pintumayu": 0.48,
+        "este": 0.78,
+        "tamborada": 0.81
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-007",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Policía se suma al dispositivo de rescate de damnificados de la mazamorra en Tiquipaya",
+        "medio": "Opinión Bolivia",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS3U5RmQyOXNSbVFPbFg2c3ZMclI3ZzcwX0t5YUdpemdENkd5T0F5c3NsWThxM3FMRDVjQkI3dmxseHNna2dhRkNXUXpIUEVoVWk4M1hJWmxIenhBUGphVlF5UWR0cmZNcmFZOWdFRjlmLTdKODNmZWgyeEUyYnZXVFhfNnZITlZmMzlEd1U1TkRERXR4ZGQtZXRoemlVeDlUTWxPc3BhTndyS2thbXNpRF9vdlg2U0VQYzdaZVpwLU1FSFZnbktWYtIBzgFBVV95cUxNZUcxZ252TnFrSnJKWkViWnBmdjNDaGFhVEZKZ0I5OFJaN0VtRkV1OXdUYThBWmt3UFBxSTlQbVdSNGViMTlXYkwya3prdWJGMExhX0hFYXRhVkM4VUF3b0ZLdk1BcEFTeTlwR0Zmb21oZDFCTF9Ld2RWdkF5RktsTFAzZlYwNGVKWTNNcGdIeXdRMkVUUlp3ZGlhX0FOOFVib3phTDZjYi1pUFBnMnQtaXNXem14WmphbGJaZ1R4TmY0MVoyb2xkQ1o4Y2VOQQ?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Taquiña",
+        "w_ant": 0.849,
+        "cn_eff": 82.4,
+        "storage_s_mm": 54.4,
+        "bulking_factor_bf": 1.68,
+        "p_crit_1hr_mm": 20.9,
+        "qp_bulked_m3s": 6.9,
+        "q_cap_m3s": 28.4
+      }
+    },
+    {
+      "etiqueta": "2020-02-23",
+      "id_evento": "NEWS-008",
+      "riesgo_principal": 90,
+      "saturacion_sar": 20,
+      "lluvia_mm": 1.2,
+      "lluvia_3d_mm": 85.6,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.25x con umbral crítico reducido a 17.9 mm/h. Evento registrado: Hay más de 90 familias afectadas por la mazamorra en Tiquipaya (El Potosí).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 90 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 17.9 mm/h | Bulking BF: 1.25x | Noticia: \"Hay más de 90 familias afectadas por la mazamorra en Tiquipaya...\" (El Potosí)."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.95,
+        "chutakawa": 0.31,
+        "pintumayu": 0.37,
+        "este": 0.35,
+        "tamborada": 0.37
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-008",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Hay más de 90 familias afectadas por la mazamorra en Tiquipaya",
+        "medio": "El Potosí",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTGVTX3huOEVRS1B0R2gzeS1BWkJZbGtnelNXV3VST29NQmk3aU1CQWdIRW9nU3J2Y1ExUFVjd3F0RXdNUE01aGxlOTliZFlJbmZuVDkxUmJBblF3RnYwdWRNaWk3YnptWGpzTDYxTDRLOE9fazRNbjJIcWtyUkpmOVZ6TnltdkdBOU1xYWNoV09JTjNCMFRsNHRzUzlSc1RfcVNiWW1KVmZ2dw?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Tunasani",
+        "w_ant": 0.946,
+        "cn_eff": 92.5,
+        "storage_s_mm": 20.7,
+        "bulking_factor_bf": 1.25,
+        "p_crit_1hr_mm": 17.9,
+        "qp_bulked_m3s": 2.3,
+        "q_cap_m3s": 28.8
+      }
+    },
+    {
+      "etiqueta": "2020-03-01",
+      "id_evento": "NEWS-009",
+      "riesgo_principal": 90,
+      "saturacion_sar": 20,
+      "lluvia_mm": 9.6,
+      "lluvia_3d_mm": 20.9,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.43x con umbral crítico reducido a 15.2 mm/h. Evento registrado: Tiquipaya: encuentran el cuerpo de un hombre en medio de la mazamorra (El Potosí).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 90 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 15.2 mm/h | Bulking BF: 1.43x | Noticia: \"Tiquipaya: encuentran el cuerpo de un hombre en medio de la mazamorra...\" (El Potosí)."
+        },
+        {
+          "nivel": "warn",
+          "zona": "este",
+          "titulo": "Vigilancia · C. Millumayu (55 pts)",
+          "detalle": "Capacidad restante S(t): 10.5 mm | Escorrentía efectiva: 2.8 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.95,
+        "chutakawa": 0.41,
+        "pintumayu": 0.57,
+        "este": 0.58,
+        "tamborada": 0.55
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-009",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Tiquipaya: encuentran el cuerpo de un hombre en medio de la mazamorra",
+        "medio": "El Potosí",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaUJZaXA2SXNWTmRydzVZdzBBWnhoNXUzM2d5WW1oM0FncDZhMVpxWUVZd21vWDZhVDBVdFpVdW1XYkpHVkExdUVEMHdTTWxXVno0QmluNGJhcGxEdWh6WFBjNXBIczNsQWI2LVNUTFBHTWU3QWhwSFBfX2JCYnJhRUQ1bmlraFctVW54M3BfeDQzV3dndGxmNnZxWFFXb2x1bE80MEt4MUllNWNoZlBpUk1n?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Llavini",
+        "w_ant": 0.834,
+        "cn_eff": 94.1,
+        "storage_s_mm": 15.9,
+        "bulking_factor_bf": 1.43,
+        "p_crit_1hr_mm": 15.2,
+        "qp_bulked_m3s": 10.0,
+        "q_cap_m3s": 13.5
+      }
+    },
+    {
+      "etiqueta": "2021-01-17",
+      "id_evento": "NEWS-010",
+      "riesgo_principal": 94,
+      "saturacion_sar": 20,
+      "lluvia_mm": 35.8,
+      "lluvia_3d_mm": 8.9,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Inundación / Anegamiento pluvial en Torrenteras Norte / Valle Central",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.12x con umbral crítico reducido a 19.4 mm/h. Evento registrado: Lluvias causan zozobra en barrios de Cochabamba (Opinión Bolivia).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "pintumayu",
+          "titulo": "ALERTA ROJA · Torrenteras Norte / Valle Central (Cochabamba (Cercado)) - 94 pts",
+          "detalle": "Inundación / Anegamiento pluvial confirmado en Cochabamba (Cercado). P_crit: 19.4 mm/h | Bulking BF: 1.12x | Noticia: \"Lluvias causan zozobra en barrios de Cochabamba...\" (Opinión Bolivia)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "este",
+          "titulo": "Alerta Crítica · C. Millumayu (98 pts)",
+          "detalle": "Capacidad restante S(t): 10.5 mm | Escorrentía efectiva: 16.2 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "Alerta Crítica · C. Tunasani (97 pts)",
+          "detalle": "Capacidad restante S(t): 22.1 mm | Escorrentía efectiva: 20.3 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "este",
+          "titulo": "Alerta Crítica · C. Tocorani (97 pts)",
+          "detalle": "Capacidad restante S(t): 16.0 mm | Escorrentía efectiva: 13.5 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 1.0,
+        "chutakawa": 0.84,
+        "pintumayu": 0.99,
+        "este": 1.0,
+        "tamborada": 0.97
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-010",
+        "municipio": "Cochabamba (Cercado)",
+        "cuenca_torrentera": "Torrenteras Norte / Valle Central",
+        "tipo_fenomeno": "Inundación / Anegamiento pluvial",
+        "titular": "Lluvias causan zozobra en barrios de Cochabamba",
+        "medio": "Opinión Bolivia",
+        "lat": -17.358,
+        "lon": -66.165,
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON0NHTFFTbUQ3ZXRQSXFDV1JrdzFONGlPcEUxQS1QVVFxbWtmcU5UVGhpcTgybFpqY3ZCR3R4WjN4bHIwUXlVaFk3R1hPSG5wa0JKNXROWklxX3N4amR1dW5nTjBqajNvUDg0LV9DMmlRNE9oTTJ5VDRMRnRyenVnSTFNd0lFTGxlOXAxOExJb0s2SkYtMnFteVA2Ni1XTjVXMmhndkQ4NmhGY0tiZ2FHQ3d5clnSAa4BQVVfeXFMUDgxSTRpTWFjZXhOMm90MVl4RGxTelIyamdIT2RXVktIS0U1SHpHeVl4dTJPU21JdjdQZWF5ZXYxNm9LMDBrZ3EyazFhdHUzNUFPTTQtY2VWWEhzOU5RRlJ0aHRkLThSdDhLQVJscFJfYzY3N3JRVHNTaURfeUZWREswZkJTNGF1Wm9BZDVXSDVZbExYOHktbHpacF8tQ0FwT3JyNzVaUVlJR3BYUmNR?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Higuerani",
+        "w_ant": 0.828,
+        "cn_eff": 91.9,
+        "storage_s_mm": 22.4,
+        "bulking_factor_bf": 1.12,
+        "p_crit_1hr_mm": 19.4,
+        "qp_bulked_m3s": 110.5,
+        "q_cap_m3s": 41.0
+      }
+    },
+    {
+      "etiqueta": "2021-11-26",
+      "id_evento": "NEWS-011",
+      "riesgo_principal": 80,
+      "saturacion_sar": 15,
+      "lluvia_mm": 10.1,
+      "lluvia_3d_mm": 12.2,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Desborde de torrentera en Torrentera Pintumayu",
+      "estado_desc": "Saturación de suelo coluvial extrema (15.5% SAR). El factor de detritos (Bulking) alcanzó 1.04x con umbral crítico reducido a 26.8 mm/h. Evento registrado: Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu (Los Tiempos).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "pintumayu",
+          "titulo": "ALERTA ROJA · Torrentera Pintumayu (Cochabamba (Cercado)) - 80 pts",
+          "detalle": "Desborde de torrentera confirmado en Cochabamba (Cercado). P_crit: 26.8 mm/h | Bulking BF: 1.04x | Noticia: \"Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu...\" (Los Tiempos)."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.29,
+        "chutakawa": 0.28,
+        "pintumayu": 0.85,
+        "este": 0.4,
+        "tamborada": 0.21
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-011",
+        "municipio": "Cochabamba (Cercado)",
+        "cuenca_torrentera": "Torrentera Pintumayu",
+        "tipo_fenomeno": "Desborde de torrentera",
+        "titular": "Alcaldía moviliza 10 cuadrillas de emergencia y monitorea la torrentera Pintumayu",
+        "medio": "Los Tiempos",
+        "lat": -17.345,
+        "lon": -66.1535,
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNUSjlMenp4ZVoxcWpCUjZzcS1FYnpaLWQwTHR2ZEFDN2RteEwwdGVFWmhsZ1BYNTctUk12WmUxSXF4UXFwdmt6ZjZESVdKZGN1THJZNkZoZGJWQ2JIV2JxYm5hazA2cjNxWVdmcVhyMzVLMXRVRmdZNmg3cVFlNlZ6YkptcTI0aWoyM09tZFV4Y0hlNTVrRmMtNGhreDZxN2ROaVItajVOck91WkswekhEb0NaVzVQWGF3bVRR?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Higuerani",
+        "w_ant": 0.498,
+        "cn_eff": 86.1,
+        "storage_s_mm": 41.1,
+        "bulking_factor_bf": 1.04,
+        "p_crit_1hr_mm": 26.8,
+        "qp_bulked_m3s": 3.9,
+        "q_cap_m3s": 41.0
+      }
+    },
+    {
+      "etiqueta": "2024-02-26",
+      "id_evento": "NEWS-012",
+      "riesgo_principal": 78,
+      "saturacion_sar": 20,
+      "lluvia_mm": 41.6,
+      "lluvia_3d_mm": 83.1,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Torrentera Ch'aki Mayu / Arocagua",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.0% SAR). El factor de detritos (Bulking) alcanzó 1.38x con umbral crítico reducido a 16.1 mm/h. Evento registrado: Cochabamba: Mazamorra en Sacaba entierra casas y autos y destruye cultivos y granjas de pollos (ANF Agencia de Noticias Fides Bolivia).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "este",
+          "titulo": "ALERTA ROJA · Torrentera Ch'aki Mayu / Arocagua (Sacaba) - 78 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Sacaba. P_crit: 16.1 mm/h | Bulking BF: 1.38x | Noticia: \"Cochabamba: Mazamorra en Sacaba entierra casas y autos y destruye cultivos y granjas de pollos...\" (ANF Agencia de Noticias Fides Bolivia)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "Alerta Crítica · C. Tunasani (98 pts)",
+          "detalle": "Capacidad restante S(t): 20.7 mm | Escorrentía efectiva: 26.0 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "Alerta Crítica · C. Tunas animayu (98 pts)",
+          "detalle": "Capacidad restante S(t): 30.1 mm | Escorrentía efectiva: 21.7 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "pintumayu",
+          "titulo": "Alerta Crítica · C. Higuerani (95 pts)",
+          "detalle": "Capacidad restante S(t): 21.4 mm | Escorrentía efectiva: 25.6 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 1.0,
+        "chutakawa": 0.24,
+        "pintumayu": 1.0,
+        "este": 0.75,
+        "tamborada": 0.39
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-012",
+        "municipio": "Sacaba",
+        "cuenca_torrentera": "Torrentera Ch'aki Mayu / Arocagua",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Cochabamba: Mazamorra en Sacaba entierra casas y autos y destruye cultivos y granjas de pollos",
+        "medio": "ANF Agencia de Noticias Fides Bolivia",
+        "lat": -17.375,
+        "lon": -66.102,
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTV5UnV2c0FlbmFlNGVTX2NBSGFWZGpMLWRFRkdJR2p5VnNvc0ZJaEg2eG1nMXpuTW5venBnOHNsZVBYX24xMkFpTHdfSGZyZ1U5VF85dXpkZEhXNHI1LVhXZFp1dW95LU9kRmRTQ1hMUktwc2RUUWJlazBPckllYU5ENzRNdVBlbkVFTVk5OTlGdjd1eWV2WXA5b0ZsTnFQVld2NW1iZGVPZ21xYjltRDJoX1gzYjdfVDNvUjJaMl9iR21JOEd2VEtPa3FJdURlRWxuLUFFSDk?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Millumayu",
+        "w_ant": 0.864,
+        "cn_eff": 94.5,
+        "storage_s_mm": 14.7,
+        "bulking_factor_bf": 1.38,
+        "p_crit_1hr_mm": 16.1,
+        "qp_bulked_m3s": 0.5,
+        "q_cap_m3s": 10.4
+      }
+    },
+    {
+      "etiqueta": "2024-03-09",
+      "id_evento": "NEWS-013",
+      "riesgo_principal": 90,
+      "saturacion_sar": 28,
+      "lluvia_mm": 16.2,
+      "lluvia_3d_mm": 13.7,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Inundación / Anegamiento pluvial en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (28.5% SAR). El factor de detritos (Bulking) alcanzó 1.34x con umbral crítico reducido a 28.1 mm/h. Evento registrado: Desborde del río Tolavi inunda calles y casas, y causa alarma en los vecinos de Tiquipaya (unitel.bo).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 90 pts",
+          "detalle": "Inundación / Anegamiento pluvial confirmado en Tiquipaya. P_crit: 28.1 mm/h | Bulking BF: 1.34x | Noticia: \"Desborde del río Tolavi inunda calles y casas, y causa alarma en los vecinos de Tiquipaya...\" (unitel.bo)."
+        },
+        {
+          "nivel": "warn",
+          "zona": "este",
+          "titulo": "Vigilancia · C. Millumayu (50 pts)",
+          "detalle": "Capacidad restante S(t): 16.5 mm | Escorrentía efectiva: 3.3 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.95,
+        "chutakawa": 0.39,
+        "pintumayu": 0.33,
+        "este": 0.53,
+        "tamborada": 0.29
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-013",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Inundación / Anegamiento pluvial",
+        "titular": "Desborde del río Tolavi inunda calles y casas, y causa alarma en los vecinos de Tiquipaya",
+        "medio": "unitel.bo",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNX3FmSF9Wd1ZkUU8zZ0ZRQmRqSzhabHZFRXFKVi1iVjhGOEd1Wml0LXlNYnpaMVA0VjVhTjk5VEJRVVUxbmhEcnhPOWpVeU9Za0s2UkJqRDNTNWV3SGlhcDNSUDVQVWpKbklYMDI4UnhKTUJKUGFrVDN3NTZlTW9hZEZoQXF5SmlCZExxNE9ORmlRbnRTUldTRTNwSXQwRzVDUlBsZkJod1dLWEZvYS1aaWRwNjg2MzE0ajRpSFRsaVllMUdDaXR0MlFGOFhNaXRF?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Taquiña",
+        "w_ant": 0.673,
+        "cn_eff": 76.8,
+        "storage_s_mm": 76.9,
+        "bulking_factor_bf": 1.34,
+        "p_crit_1hr_mm": 28.1,
+        "qp_bulked_m3s": 5.6,
+        "q_cap_m3s": 28.4
+      }
+    },
+    {
+      "etiqueta": "2024-03-11",
+      "id_evento": "NEWS-014",
+      "riesgo_principal": 70,
+      "saturacion_sar": 20,
+      "lluvia_mm": 0.1,
+      "lluvia_3d_mm": 39.7,
+      "twi_medio": 10.74,
+      "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento en Río Chijllawiri / Abanico Taquiña",
+      "estado_desc": "Incremento sostenido de humedad antecedente en Colcapirhua. Capacidad de infiltración reducida (15.9 mm restantes). Tras la inundación en Colcapirhua se formaron lagunas con agua retenida; vecinos temen enfermedades.",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Chijllawiri / Abanico Taquiña (Colcapirhua) - 70 pts",
+          "detalle": "Inundación / Anegamiento pluvial confirmado en Colcapirhua. P_crit: 15.2 mm/h | Bulking BF: 1.43x | Noticia: \"Tras la inundación en Colcapirhua se formaron lagunas con agua retenida; vecinos temen enfermed...\" (unitel.bo)."
+        },
+        {
+          "nivel": "warn",
+          "zona": "pintumayu",
+          "titulo": "Vigilancia · C. Higuerani (58 pts)",
+          "detalle": "Capacidad restante S(t): 21.4 mm | Escorrentía efectiva: 4.4 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.74,
+        "chutakawa": 0.28,
+        "pintumayu": 0.61,
+        "este": 0.34,
+        "tamborada": 0.38
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-014",
+        "municipio": "Colcapirhua",
+        "cuenca_torrentera": "Río Chijllawiri / Abanico Taquiña",
+        "tipo_fenomeno": "Inundación / Anegamiento pluvial",
+        "titular": "Tras la inundación en Colcapirhua se formaron lagunas con agua retenida; vecinos temen enfermedades",
+        "medio": "unitel.bo",
+        "lat": -17.378,
+        "lon": -66.231,
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSzR3amxhUDJzTDBQalFBOW1WQXB5Ti1PU0I2SV9zX3Jkc1VKczl3YXM0Z0txM3lHODRNdEQzRG1lSzBVcmROX2NSa0R5d2FYTzVIdjFnZS16bkdFUVdoLUxGV1V0N1B5TFJIb1ZlQXFfSEtZeWtCRnN2X2Z6eFZHc0ZWSVdzeHFLQ19UVzZmeUdzWnVkTUtIckxlbll6c21QMlZSTTBxWEt2aHotemVjUFB6VEtfV2ZaM3pZYk5ZMERFSDZlYk1PaVFETUp6T2k3OWY0ajloQU1WREJwX1E?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Llavini",
+        "w_ant": 0.834,
+        "cn_eff": 94.1,
+        "storage_s_mm": 15.9,
+        "bulking_factor_bf": 1.43,
+        "p_crit_1hr_mm": 15.2,
+        "qp_bulked_m3s": 12.2,
+        "q_cap_m3s": 13.5
+      }
+    },
+    {
+      "etiqueta": "2024-05-10",
+      "id_evento": "NEWS-015",
+      "riesgo_principal": 90,
+      "saturacion_sar": 20,
+      "lluvia_mm": 0.3,
+      "lluvia_3d_mm": 0.9,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Río Taquiña",
+      "estado_desc": "Saturación de suelo coluvial extrema (20.1% SAR). El factor de detritos (Bulking) alcanzó 1.02x con umbral crítico reducido a 34.1 mm/h. Evento registrado: Subalcalde de Tiquipaya clama por ayuda, mazamorra afectó casas y un puente (ANF Agencia de Noticias Fides Bolivia).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "taquina",
+          "titulo": "ALERTA ROJA · Río Taquiña (Tiquipaya) - 90 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Tiquipaya. P_crit: 34.1 mm/h | Bulking BF: 1.02x | Noticia: \"Subalcalde de Tiquipaya clama por ayuda, mazamorra afectó casas y un puente...\" (ANF Agencia de Noticias Fides Bolivia)."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.95,
+        "chutakawa": 0.11,
+        "pintumayu": 0.11,
+        "este": 0.13,
+        "tamborada": 0.11
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-015",
+        "municipio": "Tiquipaya",
+        "cuenca_torrentera": "Río Taquiña",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Subalcalde de Tiquipaya clama por ayuda, mazamorra afectó casas y un puente",
+        "medio": "ANF Agencia de Noticias Fides Bolivia",
+        "lat": -17.3385,
+        "lon": -66.216,
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVFN5bVhvSzB4ZFl5UzJpT3dPRmZTc1NXalp2UzFRZzVOeG1IRlU4Nk9uZTg5TWg4Q1ZXOWlRRUV4YnBpUUpZb05yZ1JTWG5IUXlucjd0ZUMxNmlWVXRET1hyd1dxMVA2S29fdnZ0RExtS0hpMndfbEloLWFoTXNyaUYzV3hZbGE3R3VoQm9wVnhLSFhvSHljcTJZenJkMlR4RmwtbHlsVl93dld4anpNTFAxZkJKdkljckE?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Tunasani",
+        "w_ant": 0.35,
+        "cn_eff": 80.0,
+        "storage_s_mm": 63.3,
+        "bulking_factor_bf": 1.02,
+        "p_crit_1hr_mm": 34.1,
+        "qp_bulked_m3s": 0.0,
+        "q_cap_m3s": 28.8
+      }
+    },
+    {
+      "etiqueta": "2025-01-21",
+      "id_evento": "NEWS-016",
+      "riesgo_principal": 61,
+      "saturacion_sar": 20,
+      "lluvia_mm": 5.7,
+      "lluvia_3d_mm": 27.2,
+      "twi_medio": 10.74,
+      "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento en Río Chijllawiri / Abanico Taquiña",
+      "estado_desc": "Incremento sostenido de humedad antecedente en Colcapirhua. Capacidad de infiltración reducida (15.9 mm restantes). Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit.",
+      "alertas_emitidas": [
+        {
+          "nivel": "warn",
+          "zona": "taquina",
+          "titulo": "PRE-ALERTA · Río Chijllawiri / Abanico Taquiña (Colcapirhua) - 61 pts",
+          "detalle": "Desborde de torrentera confirmado en Colcapirhua. P_crit: 15.2 mm/h | Bulking BF: 1.43x | Noticia: \"Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit...\" (Red Uno)."
+        },
+        {
+          "nivel": "crit",
+          "zona": "tamborada",
+          "titulo": "Alerta Crítica · C. Pucarita (79 pts)",
+          "detalle": "Capacidad restante S(t): 14.2 mm | Escorrentía efectiva: 9.1 mm."
+        },
+        {
+          "nivel": "crit",
+          "zona": "tamborada",
+          "titulo": "Alerta Crítica · C. Asna Kochi (77 pts)",
+          "detalle": "Capacidad restante S(t): 25.6 mm | Escorrentía efectiva: 5.9 mm."
+        },
+        {
+          "nivel": "warn",
+          "zona": "tamborada",
+          "titulo": "Vigilancia · C. Arrumani (58 pts)",
+          "detalle": "Capacidad restante S(t): 37.7 mm | Escorrentía efectiva: 4.0 mm."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.65,
+        "chutakawa": 0.33,
+        "pintumayu": 0.43,
+        "este": 0.46,
+        "tamborada": 0.83
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-016",
+        "municipio": "Colcapirhua",
+        "cuenca_torrentera": "Río Chijllawiri / Abanico Taquiña",
+        "tipo_fenomeno": "Desborde de torrentera",
+        "titular": "Colcapirhua: Colocan diques de contención tras el desborde de la torrentera Duralit",
+        "medio": "Red Uno",
+        "lat": -17.378,
+        "lon": -66.231,
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjV2YVE4UjF2VzFkSVBSQUREZldUUEkzOTgyTUdaNXp4RlE0X3dhczgyaHJzZlRCV0JSbTZGTWhlcE1mZ24wZWpoZjZTd2NYdVFmQU9ZT1ltY0EtcHFpSWl0UGNlbmZJWXFISS0xLVRrNHFBTzNINXd4d3NjRXcwOUF3d2t2R3Bua3pSYjRlQnBFb2xqaGNDWHF6Z21YNUxjSVltSlAyWExxa2JjMS1YcEotb08zMC1YXzEtOE50VjZkcDg2RExOZzJwbw?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Llavini",
+        "w_ant": 0.834,
+        "cn_eff": 94.1,
+        "storage_s_mm": 15.9,
+        "bulking_factor_bf": 1.43,
+        "p_crit_1hr_mm": 15.2,
+        "qp_bulked_m3s": 4.5,
+        "q_cap_m3s": 13.5
+      }
+    },
+    {
+      "etiqueta": "2026-01-23",
+      "id_evento": "NEWS-017",
+      "riesgo_principal": 78,
+      "saturacion_sar": 55,
+      "lluvia_mm": 2.4,
+      "lluvia_3d_mm": 136.7,
+      "twi_medio": 10.74,
+      "estado_titulo": "ALERTA ROJA OPERATIVA · Mazamorra / Flujo de detritos en Torrenteras Norte / Valle Central",
+      "estado_desc": "Saturación de suelo coluvial extrema (55.6% SAR). El factor de detritos (Bulking) alcanzó 1.8x con umbral crítico reducido a 19.0 mm/h. Evento registrado: Cortan tráfico en la ruta que une Cochabamba con el occidente por mazamorra tras el desborde del río Viloma (unitel.bo).",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "pintumayu",
+          "titulo": "ALERTA ROJA · Torrenteras Norte / Valle Central (Cochabamba (Cercado)) - 78 pts",
+          "detalle": "Mazamorra / Flujo de detritos confirmado en Cochabamba (Cercado). P_crit: 19.0 mm/h | Bulking BF: 1.8x | Noticia: \"Cortan tráfico en la ruta que une Cochabamba con el occidente por mazamorra tras el desborde de...\" (unitel.bo)."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.34,
+        "chutakawa": 0.35,
+        "pintumayu": 0.7,
+        "este": 0.46,
+        "tamborada": 0.33
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-017",
+        "municipio": "Cochabamba (Cercado)",
+        "cuenca_torrentera": "Torrenteras Norte / Valle Central",
+        "tipo_fenomeno": "Mazamorra / Flujo de detritos",
+        "titular": "Cortan tráfico en la ruta que une Cochabamba con el occidente por mazamorra tras el desborde del río Viloma",
+        "medio": "unitel.bo",
+        "lat": -17.358,
+        "lon": -66.165,
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTktvRWJMQ0NyVjlISzlqblJ6a0tfc0ZRdnJ5NlBTb3VpS0NlM09tRmcwd19LaWNORTU5OGdCdTRYd3hXUGZJZlp3cEN2Z2gxbGVQWXBISzRnbHM2REdMSlFBZ2VfaDNXYm9YS3BBUGV1VmwtWVVpT2VkTE93aFFiTm1GYWQ0ODZpTC1rZ1lNNURQdS1aQ1lnal9odENkTzZjdVptOEFoQ2hVOFdTejJPTU8td1J6QUZPdzhwNDM4ZC05NGcycWJ4ZHRocGNyR0dPYzJNVGk3bE9HQmNjWFpvbk5maW5ISEFtNHc?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C. Pintu Mayu",
+        "w_ant": 0.896,
+        "cn_eff": 83.9,
+        "storage_s_mm": 48.7,
+        "bulking_factor_bf": 1.8,
+        "p_crit_1hr_mm": 19.0,
+        "qp_bulked_m3s": 0.0,
+        "q_cap_m3s": 20.3
+      }
+    },
+    {
+      "etiqueta": "2026-09-30",
+      "id_evento": "NEWS-018",
+      "riesgo_principal": 66,
+      "saturacion_sar": 21,
+      "lluvia_mm": 13.2,
+      "lluvia_3d_mm": 3.7,
+      "twi_medio": 10.74,
+      "estado_titulo": "PRE-ALERTA AMARILLA · Precondicionamiento en Torrenteras Norte / Valle Central",
+      "estado_desc": "Incremento sostenido de humedad antecedente en Cochabamba (Cercado). Capacidad de infiltración reducida (38.4 mm restantes). Cochabamba adelanta la limpieza de torrenteras y bocatormentas para prevenir inundaciones.",
+      "alertas_emitidas": [
+        {
+          "nivel": "crit",
+          "zona": "pintumayu",
+          "titulo": "ALERTA ROJA · Torrenteras Norte / Valle Central (Cochabamba (Cercado)) - 66 pts",
+          "detalle": "Desborde de torrentera confirmado en Cochabamba (Cercado). P_crit: 29.6 mm/h | Bulking BF: 1.01x | Noticia: \"Cochabamba adelanta la limpieza de torrenteras y bocatormentas para prevenir inundaciones...\" (Red Uno)."
+        }
+      ],
+      "intensidades": {
+        "taquina": 0.25,
+        "chutakawa": 0.19,
+        "pintumayu": 0.7,
+        "este": 0.46,
+        "tamborada": 0.18
+      },
+      "metadatos_evento": {
+        "id_evento": "NEWS-018",
+        "municipio": "Cochabamba (Cercado)",
+        "cuenca_torrentera": "Torrenteras Norte / Valle Central",
+        "tipo_fenomeno": "Desborde de torrentera",
+        "titular": "Cochabamba adelanta la limpieza de torrenteras y bocatormentas para prevenir inundaciones",
+        "medio": "Red Uno",
+        "lat": -17.358,
+        "lon": -66.165,
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOWJ6Ym9aWXN2TFVkN2wtRUpGNmhvUGtzQ24wZFF4MVdTQ3FHVEtGbTNVU3dINC1WNE5mY0lweHRnUTktRjV4UFBPRWFta0pmaVVNMXZ4MnFOUi01bTdDNlNXc2dLck9GOS0yei1TQU9VSzhzbFZncVFFNGtaSUNNMUFfQktBeVdTVmgza2gtOWNGcnhrYjRtV0xMNlhrZTdDUW43M2dTYWJfaG5pdmFzY0N1MnZGSDBmc2ZGVzhfS0dnTzFyWFJBZUFqWjVMQXFpUDJWQQ?oc=5"
+      },
+      "parametros_fisicos": {
+        "cuenca_focal": "C6",
+        "w_ant": 0.298,
+        "cn_eff": 86.9,
+        "storage_s_mm": 38.4,
+        "bulking_factor_bf": 1.01,
+        "p_crit_1hr_mm": 29.6,
+        "qp_bulked_m3s": 1.9,
+        "q_cap_m3s": 10.6
+      }
+    }
+  ]
+}
